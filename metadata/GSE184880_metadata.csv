@@ -1,0 +1,61 @@
+Run,Sample Name,age,pathology,source_name,SRA Study,tissue_type,tumor_stage
+SRR16093329,GSM5599220,55,Mucinous cystadenoma of ovary,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093330,GSM5599220,55,Mucinous cystadenoma of ovary,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093331,GSM5599220,55,Mucinous cystadenoma of ovary,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093332,GSM5599220,55,Mucinous cystadenoma of ovary,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093333,GSM5599221,47,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093334,GSM5599221,47,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093335,GSM5599221,47,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093336,GSM5599221,47,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093337,GSM5599222,46,Ovarian endometrotic cyst,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093338,GSM5599222,46,Ovarian endometrotic cyst,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093339,GSM5599222,46,Ovarian endometrotic cyst,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093340,GSM5599222,46,Ovarian endometrotic cyst,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093341,GSM5599223,51,Adenomyosis,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093342,GSM5599223,51,Adenomyosis,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093343,GSM5599223,51,Adenomyosis,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093344,GSM5599223,51,Adenomyosis,Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093345,GSM5599224,49,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093346,GSM5599224,49,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093347,GSM5599224,49,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093348,GSM5599224,49,"Uterine leiomyomas, ovarian cysts",Normal ovarian tissue,SRP338994,Normal ovarian tissue,Normal
+SRR16093349,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093350,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093351,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093352,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093353,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093354,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093355,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093356,GSM5599225,50,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIB
+SRR16093357,GSM5599226,51,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093358,GSM5599226,51,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093359,GSM5599226,51,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093360,GSM5599226,51,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093361,GSM5599227,41,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093362,GSM5599227,41,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093363,GSM5599227,41,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093364,GSM5599227,41,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093365,GSM5599228,47,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093366,GSM5599228,47,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093367,GSM5599228,47,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093368,GSM5599228,47,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093369,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093370,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093371,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093372,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093373,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093374,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093375,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093376,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093377,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093378,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093379,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093380,GSM5599229,57,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIB
+SRR16093381,GSM5599230,48,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIC
+SRR16093382,GSM5599230,48,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIC
+SRR16093383,GSM5599230,48,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIC
+SRR16093384,GSM5599230,48,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IIIC
+SRR16093385,GSM5599231,53,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093386,GSM5599231,53,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093387,GSM5599231,53,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2
+SRR16093388,GSM5599231,53,HGSOC,High-grade serous ovarian cancer tissue,SRP338994,High-grade serous ovarian cancer tissue,IC2

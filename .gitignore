@@ -1,0 +1,63 @@
+# Large data files
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+*.bai
+*.bed
+*.bigWig
+*.bigBed
+*.h5
+*.h5ad
+*.loom
+*.rds
+*.Rdata
+*.RData
+*.csv
+*.tsv
+*.mtx
+*.serialized
+*.sqlite
+*.sqlite.gz
+
+# Folders containing large data
+**/fastq/
+**/alignment/
+**/NAFLD_NASH_RNAseq/raw_data
+**/data/
+**/results/
+**/output/
+
+# Python/R environment and cache files
+__pycache__/
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.ipynb_checkpoints/
+
+# Log files
+*.log
+*.out
+*.err
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Exceptions - keep these CSV/metadata files even if small
+!samplesheet.csv
+!**/metadata/*.csv
+!**/metadata/*.tsv
+
+# Keep configuration and code files regardless of location
+!*.nf
+!nextflow.config
+!*.R
+!*.py
+!*.sh
+!*.md
+!*.yml
+!*.yaml 
