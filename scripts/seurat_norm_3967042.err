@@ -1416,3 +1416,52 @@ Calculating feature variances of standardized and clipped values
 **************************************************|
 Centering and scaling data matrix
   |                                                                              |                                                                      |   0%  |                                                                              |===                                                                   |   4%  |                                                                              |=====                                                                 |   7%  |                                                                              |========                                                              |  11%  |                                                                              |==========                                                            |  15%  |                                                                              |=============                                                         |  19%  |                                                                              |================                                                      |  22%  |                                                                              |==================                                                    |  26%  |                                                                              |=====================                                                 |  30%  |                                                                              |=======================                                               |  33%  |                                                                              |==========================                                            |  37%  |                                                                              |=============================                                         |  41%  |                                                                              |===============================                                       |  44%  |                                                                              |==================================                                    |  48%  |                                                                              |====================================                                  |  52%  |                                                                              |=======================================                               |  56%  |                                                                              |=========================================                             |  59%  |                                                                              |============================================                          |  63%  |                                                                              |===============================================                       |  67%  |                                                                              |=================================================                     |  70%  |                                                                              |====================================================                  |  74%  |                                                                              |======================================================                |  78%  |                                                                              |=========================================================             |  81%  |                                                                              |============================================================          |  85%  |                                                                              |==============================================================        |  89%  |                                                                              |=================================================================     |  93%  |                                                                              |===================================================================   |  96%  |                                                                              |======================================================================| 100%
+PC_ 1 
+Positive:  GNLY, CXCL13, IFNG-AS1, CRTAM, IGLC2, KCNQ5, MZB1, GZMK, DLGAP1, MDM2 
+	   TNFRSF4, GEM, IL2RA, GPR183, XCL2, CCL4L2, JSRP1, TRDC, LINC02099, JCHAIN 
+	   IGHG1, IGHG4, IGLC3, RGS16, IGHG3, POU2AF1, CD79A, CCR7, PLAC8, ITM2C 
+Negative:  ENSG00000248515, MEIS1, NFIB, MECOM, RHEX, NPAS3, RIMS2, PARD3, GLIS3, PBX1 
+	   CDC42BPA, KIAA1217, SPON1, ELF3, YAP1, UGT2B7, EPCAM, WT1, MUC1, MYO10 
+	   CLDN3, SGCD, WFDC2, SLC34A2, PCDH7, NXN, CHI3L1, ENSG00000286133, KRT18, CLDN4 
+PC_ 2 
+Positive:  PLXDC2, DOCK4, SLC8A1, FCER1G, TYROBP, CST3, IFI30, MSR1, CD68, DMXL2 
+	   CD14, FMNL2, CYBB, LYZ, AIF1, PLAUR, FCGR3A, FCGR1A, GRN, TMEM176B 
+	   TGFBI, RAB31, CALHM6, TFEC, FN1, FPR3, TLR2, MS4A6A, SERPINA1, EPB41L3 
+Negative:  NCALD, PDE4D, OCIAD2, ABLIM1, CDKN2A, PATJ, GNLY, TBCD, LRIG1, CHODL 
+	   GAS5, ENSG00000248515, SPON1, DANCR, RIMS2, CXCL13, TMEM238, ADGRG1, UGT2B7, CD24 
+	   RHEX, IFNG-AS1, WFDC2, EPCAM, LYPD6B, CLDN3, ELF3, UBE2D2, MUC16, PCAT1 
+PC_ 3 
+Positive:  SLC25A5, S100A14, MT1G, ASRGL1, CHCHD10, ATP5MC3, CLDN3, RAB5IF, COX5B, UQCRH 
+	   SPINT2, HMGA1, WFDC2, COX7A2, ATP5MK, PPP1R1B, ENSG00000291113, PCBD1, DEFB1, S100A1 
+	   CYC1, CD24, COX7B, MRPL12, CXCL16, KLK8, HSPE1, COX6C, CDKN2A, EPCAM 
+Negative:  SPARC, FSTL1, CAVIN1, FBXL7, FBN1, COL1A2, LAMB1, COL3A1, RBPMS, COL5A2 
+	   COL6A2, IGFBP7, COL1A1, BGN, APBB2, SPARCL1, COL6A1, RARRES2, CCDC80, ANTXR1 
+	   PRKG1, CALD1, CDH11, ADAMTS2, DCN, LAMA4, COL4A1, COL4A2, THBS2, COL5A1 
+PC_ 4 
+Positive:  MUC16, DNAH5, TRIO, RIMS2, PCAT1, LINC00578, ENSG00000286133, SHROOM3, RIPK2-DT, XKR4 
+	   COL23A1, IGF2BP2, SNTG2, SGCD, SAMD12, MOB3B, ERBB4, APOBEC3A, EGFR, ARHGAP26 
+	   MT-ND4L, EPB41L1, ST6GAL1, PTPRM, GPR141, PRUNE2, ENSG00000248515, ZBTB7C, ENSG00000256417, ITGB8 
+Negative:  ATP5MC3, RPS5, COX7A2, TPI1, COX6C, PTTG1, RPL8, SLC25A5, PRDX5, TYMS 
+	   ANAPC11, NDUFB2, CKS1B, SF3B6, TXN, NDUFAB1, COX7B, UQCRH, NDUFS6, BIRC5 
+	   COX5B, SEM1, RPL7, MIF, TK1, ATP5F1B, TOMM5, SSBP1, UBE2C, PRDX6 
+PC_ 5 
+Positive:  VEGFA, AQP9, APOBEC3A, VCAN, TREM1, S100A8, S100A9, CD300E, TIMP1, FCN1 
+	   BNIP3, IL1B, LAMA3, EREG, RETN, TCIM, LAMB3, CXCL8, NLRP3, C15orf48 
+	   XDH, LUCAT1, G0S2, ANGPTL4, FLNA, IER3, HK2, IL1RN, TAGLN, PLIN2 
+Negative:  JCHAIN, DERL3, TCF4, TXNDC5, COL24A1, FCRL5, MZB1, ANKRD36BP2, POU2AF1, NAPSB 
+	   ITM2C, LINC01374, CLEC4C, PLD4, WDFY4, CD79A, TNFRSF17, TSPAN13, IGHG1, DNASE1L3 
+	   ENSG00000249988, P2RY14, BCL11A, LILRA4, SPIB, NIBAN3, CUX2, LAMP5, RGS7, MIR4432HG 
+Computing nearest neighbor graph
+Computing SNN
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+18:56:54 UMAP embedding parameters a = 0.9922 b = 1.112
+18:56:54 Read 18602 rows and found 20 numeric columns
+18:56:54 Using Annoy for neighbor search, n_neighbors = 30
+18:56:54 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+18:56:56 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b1b148e0c
+18:56:56 Searching Annoy index using 1 thread, search_k = 3000

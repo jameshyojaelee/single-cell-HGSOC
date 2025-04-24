@@ -105,3 +105,12 @@ Number of communities: 21
 Elapsed time: 1 seconds
 [1] "Filtering and normalizing GSM5599227"
 [1] "After filtering: 18602 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 18602
+Number of edges: 614130
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9089
+Number of communities: 19
+Elapsed time: 2 seconds
