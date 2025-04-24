@@ -1465,3 +1465,14 @@ Computing SNN
 **************************************************|
 18:56:56 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b1b148e0c
 18:56:56 Searching Annoy index using 1 thread, search_k = 3000
+18:57:01 Annoy recall = 100%
+18:57:02 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
+18:57:03 Found 2 connected components, falling back to 'spca' initialization with init_sdev = 1
+18:57:03 Using 'irlba' for PCA
+18:57:04 PCA: 2 components explained 62.2% variance
+18:57:04 Scaling init to sdev = 1
+18:57:04 Commencing optimization for 200 epochs, with 829550 positive edges
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+***
