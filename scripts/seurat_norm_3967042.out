@@ -103,3 +103,5 @@ Running Louvain algorithm...
 Maximum modularity in 10 random starts: 0.9337
 Number of communities: 21
 Elapsed time: 1 seconds
+[1] "Filtering and normalizing GSM5599227"
+[1] "After filtering: 18602 cells remain"

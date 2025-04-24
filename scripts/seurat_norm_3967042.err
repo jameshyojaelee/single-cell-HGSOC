@@ -1284,3 +1284,135 @@ Computing SNN
 **************************************************|
 18:51:50 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b3bd8834e
 18:51:50 Searching Annoy index using 1 thread, search_k = 3000
+18:51:55 Annoy recall = 100%
+18:51:56 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
+18:51:57 Initializing from normalized Laplacian + noise (using RSpectra)
+18:51:59 Commencing optimization for 200 epochs, with 567848 positive edges
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+18:52:04 Optimization finished
+Calculating cluster 0
+Calculating cluster 1
+Calculating cluster 2
+Calculating cluster 3
+Calculating cluster 4
+Calculating cluster 5
+Calculating cluster 6
+Calculating cluster 7
+Calculating cluster 8
+Calculating cluster 9
+Calculating cluster 10
+Calculating cluster 11
+Calculating cluster 12
+Calculating cluster 13
+Calculating cluster 14
+Calculating cluster 15
+Calculating cluster 16
+Calculating cluster 17
+Calculating cluster 18
+Calculating cluster 19
+Calculating cluster 20
+Warning: No DE genes identified
+Warning: The following tests were not performed: 
+Warning: When testing 0 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 1 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 2 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 3 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 4 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 5 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 6 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 7 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 8 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 9 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 10 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 11 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 12 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 13 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 14 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 15 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 16 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 17 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 18 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 19 versus all:
+	data layers are not joined. Please run JoinLayers
+Warning: When testing 20 versus all:
+	data layers are not joined. Please run JoinLayers
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |===                                                                   |   4%  |                                                                              |=====                                                                 |   7%  |                                                                              |========                                                              |  11%  |                                                                              |==========                                                            |  15%  |                                                                              |=============                                                         |  19%  |                                                                              |================                                                      |  22%  |                                                                              |==================                                                    |  26%  |                                                                              |=====================                                                 |  30%  |                                                                              |=======================                                               |  33%  |                                                                              |==========================                                            |  37%  |                                                                              |=============================                                         |  41%  |                                                                              |===============================                                       |  44%  |                                                                              |==================================                                    |  48%  |                                                                              |====================================                                  |  52%  |                                                                              |=======================================                               |  56%  |                                                                              |=========================================                             |  59%  |                                                                              |============================================                          |  63%  |                                                                              |===============================================                       |  67%  |                                                                              |=================================================                     |  70%  |                                                                              |====================================================                  |  74%  |                                                                              |======================================================                |  78%  |                                                                              |=========================================================             |  81%  |                                                                              |============================================================          |  85%  |                                                                              |==============================================================        |  89%  |                                                                              |=================================================================     |  93%  |                                                                              |===================================================================   |  96%  |                                                                              |======================================================================| 100%

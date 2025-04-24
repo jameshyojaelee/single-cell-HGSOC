@@ -35,6 +35,47 @@ Distinct transcriptomic signatures and immune cell phenotypes within the TME of 
 - Cell-cell communication network analysis with CellChat/NicheNet
 - Gene regulatory network analysis using scPRINT
 
+## Computational Environment
+
+### HPC Infrastructure
+- Analysis performed on the New York Genome Center (NYGC) high-performance computing (HPC) cluster
+- Shared file system (GPFS) for data storage and access
+- Job scheduling via SLURM workload manager
+
+### Computing Resources
+- CellRanger processing:
+  - 8 CPU cores
+  - 128GB memory
+  - 60-hour runtime limit
+- Seurat analysis:
+  - 16 CPU cores
+  - 196GB memory
+  - 60-hour runtime limit
+- Scanpy processing:
+  - 16 CPU cores
+  - 196GB memory
+  - 60-hour runtime limit
+
+### Software Environment
+- CellRanger v9.0.0 for alignment and feature counting
+- R v4.4.1 with Seurat v4.3.0 for R-based analysis
+- Python 3.10 with Scanpy v1.9.3 for Python-based analysis
+- Conda environments for package management and environment isolation
+
+### Example SLURM Job Submission
+```bash
+#!/bin/bash
+#SBATCH --job-name=seurat_integrate
+#SBATCH --output=seurat_integrate_%j.out
+#SBATCH --error=seurat_integrate_%j.err
+#SBATCH --time=60:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=196G
+#SBATCH --partition=cpu
+```
+
 ## Expected Results
 - Identification of differentially expressed genes and noncoding RNAs between normal and cancerous ovarian tissues
 - Characterization of immune cell populations associated with therapeutic resistance
@@ -50,3 +91,10 @@ Distinct transcriptomic signatures and immune cell phenotypes within the TME of 
 
 - **Challenge**: Complex TME interpretation  
   **Solution**: Potential integration with spatial transcriptomics data (if available) 
+
+## Author & Contact
+
+**James Lee**  
+New York Genome Center  
+Email: jameslee@nygenome.org  
+GitHub: [jameshyojaelee](https://github.com/jameshyojaelee) 
