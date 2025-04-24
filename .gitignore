@@ -28,7 +28,7 @@
 **/NAFLD_NASH_RNAseq/raw_data
 **/data/
 **/results/
-**/output/
+**/output/cellranger/
 **/test/
 
 # Python/R environment and cache files
