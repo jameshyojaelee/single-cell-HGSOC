@@ -6,6 +6,12 @@ OUTPUT_DIR="/gpfs/commons/home/jameslee/HGSOC/output/cellranger"
 SCRIPT_DIR="/gpfs/commons/home/jameslee/HGSOC/scripts"
 LOG_DIR="/gpfs/commons/home/jameslee/HGSOC/output/logs"
 
+# Path to Cell Ranger installation
+CELLRANGER_PATH="/gpfs/commons/home/jameslee/cellranger-9.0.0/cellranger"
+
+# Reference transcriptome
+TRANSCRIPTOME_REF="/gpfs/commons/home/acorman/sanjanalab/ASD_inducible_screen/Pilot_QCMiseq/GRCh38/refdata-gex-GRCh38-2024-A"
+
 # Create log directory if it doesn't exist
 mkdir -p "$LOG_DIR"
 mkdir -p "$OUTPUT_DIR"
@@ -29,17 +35,18 @@ submit_job() {
 #SBATCH --job-name=cr_${run_id}
 #SBATCH --output=${LOG_DIR}/${run_id}.out
 #SBATCH --error=${LOG_DIR}/${run_id}.err
-#SBATCH --time=48:00:00
-#SBATCH --mem=96G
-#SBATCH --cpus-per-task=16
+#SBATCH --time=60:00:00
 #SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=128G
+#SBATCH --partition=cpu
+#SBATCH --mail-type=END
+#SBATCH --mail-user=jameslee@nygenome.org
 
 # Path configurations
 FASTQ_DIR="/gpfs/commons/home/jameslee/HGSOC/fastq/GSE184880"
 OUTPUT_DIR="${OUTPUT_DIR}"
-
-# Load necessary modules (adjust according to your system)
-module load cellranger
 
 # Create a temporary directory for this run's fastq files
 temp_fastq_dir="\${OUTPUT_DIR}/tmp_${run_id}"
@@ -50,13 +57,14 @@ ln -sf "\${FASTQ_DIR}/${run_id}_1.fastq" "\${temp_fastq_dir}/${sample_name}_S1_L
 ln -sf "\${FASTQ_DIR}/${run_id}_2.fastq" "\${temp_fastq_dir}/${sample_name}_S1_L001_R2_001.fastq"
 
 # Run CellRanger count
-cellranger count \\
+${CELLRANGER_PATH} count \\
     --id="${run_id}" \\
     --fastqs="\${temp_fastq_dir}" \\
     --sample="${sample_name}" \\
-    --transcriptome=/path/to/reference/transcriptome \\
+    --transcriptome=${TRANSCRIPTOME_REF} \\
+    --create-bam=true \\
     --localcores=\$SLURM_CPUS_PER_TASK \\
-    --localmem=90 \\
+    --localmem=60 \\
     --jobmode=local \\
     --disable-ui
 
