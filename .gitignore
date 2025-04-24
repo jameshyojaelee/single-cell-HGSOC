@@ -39,11 +39,6 @@ __pycache__/
 .Ruserdata
 .ipynb_checkpoints/
 
-# Log files
-*.log
-*.out
-*.err
-
 # System files
 .DS_Store
 Thumbs.db

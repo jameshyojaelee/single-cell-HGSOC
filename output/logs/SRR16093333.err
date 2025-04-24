@@ -1,0 +1,3 @@
+
+
+Could not find a 10x cloud token in the default user directory.  In order to enable cell annotation, run cellranger cloud auth setup, or please supply a --tenx-cloud-token-path argument.
