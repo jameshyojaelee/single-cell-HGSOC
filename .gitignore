@@ -29,6 +29,7 @@
 **/data/
 **/results/
 **/output/
+**/test/
 
 # Python/R environment and cache files
 __pycache__/
