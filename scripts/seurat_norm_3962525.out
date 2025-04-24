@@ -1,0 +1,161 @@
+WARNING: ignoring environment value of R_HOME
+[1] "Metadata loaded"
+[1] "Found 12 raw RDS files to process:"
+ [1] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599220_raw.rds"
+ [2] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599221_raw.rds"
+ [3] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599222_raw.rds"
+ [4] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599223_raw.rds"
+ [5] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599224_raw.rds"
+ [6] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599225_raw.rds"
+ [7] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599226_raw.rds"
+ [8] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599227_raw.rds"
+ [9] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599228_raw.rds"
+[10] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599229_raw.rds"
+[11] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599230_raw.rds"
+[12] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599231_raw.rds"
+[1] "Loading GSM5599220 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599220_raw.rds"
+[1] "Loading GSM5599221 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599221_raw.rds"
+[1] "Loading GSM5599222 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599222_raw.rds"
+[1] "Loading GSM5599223 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599223_raw.rds"
+[1] "Loading GSM5599224 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599224_raw.rds"
+[1] "Loading GSM5599225 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599225_raw.rds"
+[1] "Loading GSM5599226 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599226_raw.rds"
+[1] "Loading GSM5599227 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599227_raw.rds"
+[1] "Loading GSM5599228 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599228_raw.rds"
+[1] "Loading GSM5599229 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599229_raw.rds"
+[1] "Loading GSM5599230 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599230_raw.rds"
+[1] "Loading GSM5599231 from /gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599231_raw.rds"
+[1] "Loaded 12 samples for processing"
+[1] "Filtering and normalizing GSM5599220"
+[1] "After filtering: 24117 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 24117
+Number of edges: 691051
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.8469
+Number of communities: 17
+Elapsed time: 4 seconds
+[1] "Filtering and normalizing GSM5599221"
+[1] "After filtering: 19904 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 19904
+Number of edges: 602076
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.8659
+Number of communities: 17
+Elapsed time: 2 seconds
+[1] "Filtering and normalizing GSM5599222"
+[1] "After filtering: 17183 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 17183
+Number of edges: 617817
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9305
+Number of communities: 20
+Elapsed time: 1 seconds
+[1] "Filtering and normalizing GSM5599223"
+[1] "After filtering: 25161 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 25161
+Number of edges: 808731
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9179
+Number of communities: 17
+Elapsed time: 3 seconds
+[1] "Filtering and normalizing GSM5599224"
+[1] "After filtering: 14866 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 14866
+Number of edges: 508381
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9484
+Number of communities: 29
+Elapsed time: 1 seconds
+[1] "Filtering and normalizing GSM5599225"
+[1] "After filtering: 61669 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 61669
+Number of edges: 1842700
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9315
+Number of communities: 29
+Elapsed time: 15 seconds
+[1] "Filtering and normalizing GSM5599226"
+[1] "After filtering: 14392 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 14392
+Number of edges: 447047
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9283
+Number of communities: 21
+Elapsed time: 1 seconds
+[1] "Filtering and normalizing GSM5599227"
+[1] "After filtering: 18602 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 18602
+Number of edges: 690960
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9118
+Number of communities: 21
+Elapsed time: 4 seconds
+[1] "Filtering and normalizing GSM5599228"
+[1] "After filtering: 12965 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 12965
+Number of edges: 414993
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9009
+Number of communities: 20
+Elapsed time: 1 seconds
+[1] "Filtering and normalizing GSM5599229"
+[1] "After filtering: 56309 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 56309
+Number of edges: 1685072
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9205
+Number of communities: 28
+Elapsed time: 15 seconds
+[1] "Filtering and normalizing GSM5599230"
+[1] "After filtering: 18061 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 18061
+Number of edges: 585496
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9035
+Number of communities: 18
+Elapsed time: 1 seconds
+[1] "Filtering and normalizing GSM5599231"
+[1] "After filtering: 14249 cells remain"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 14249
+Number of edges: 568208
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.8962
+Number of communities: 16
+Elapsed time: 1 seconds
+[1] "Integrating all samples..."
