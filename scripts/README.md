@@ -43,9 +43,9 @@ This directory contains scripts for processing and analyzing the High-grade Sero
    ```
 
 2. Process all samples with CellRanger:
-   ```bash
-   bash submit_cellranger_jobs.sh
-   ```
+```bash
+bash submit_cellranger_jobs.sh
+```
    This will create and submit all the job_*.sh scripts to the SLURM scheduler.
 
 3. Monitor job progress:

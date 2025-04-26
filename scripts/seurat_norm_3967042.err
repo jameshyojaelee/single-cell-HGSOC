@@ -1,1479 +1,0 @@
-Loading required package: SeuratObject
-Loading required package: sp
-
-Attaching package: ‘SeuratObject’
-
-The following objects are masked from ‘package:base’:
-
-    intersect, t
-
-
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-Rows: 60 Columns: 8
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (7): Run, Sample Name, pathology, source_name, SRA Study, tissue_type, t...
-dbl (1): age
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |==                                                                    |   4%  |                                                                              |=====                                                                 |   7%  |                                                                              |========                                                              |  11%  |                                                                              |==========                                                            |  14%  |                                                                              |============                                                          |  18%  |                                                                              |===============                                                       |  21%  |                                                                              |==================                                                    |  25%  |                                                                              |====================                                                  |  29%  |                                                                              |======================                                                |  32%  |                                                                              |=========================                                             |  36%  |                                                                              |============================                                          |  39%  |                                                                              |==============================                                        |  43%  |                                                                              |================================                                      |  46%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================                                |  54%  |                                                                              |========================================                              |  57%  |                                                                              |==========================================                            |  61%  |                                                                              |=============================================                         |  64%  |                                                                              |================================================                      |  68%  |                                                                              |==================================================                    |  71%  |                                                                              |====================================================                  |  75%  |                                                                              |=======================================================               |  79%  |                                                                              |==========================================================            |  82%  |                                                                              |============================================================          |  86%  |                                                                              |==============================================================        |  89%  |                                                                              |=================================================================     |  93%  |                                                                              |====================================================================  |  96%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  RBMS3, ADIRF, TCF4, MEG3, RBPMS, FOSB, EBF1, FOS, TPM2, MAML3 
-	   JUN, SPTBN1, PTPRG, YBX3, IGFBP7, SYNPO2, DLC1, MEIS2, IFITM3, MYL9 
-	   NFIB, CAVIN1, GULP1, ROBO1, C7, GNG11, CAV1, MT-ND2, MT-ND1, CLU 
-Negative:  PTPRC, SKAP1, ARHGAP15, SRGN, CCL5, NKG7, CD247, PRKCH, AOAH, PRKCB 
-	   ADGRE5, GZMA, HCST, STAT4, STK10, FYB1, IKZF1, S100A4, CST7, CYBA 
-	   ITGAL, DOCK8, GNG2, ARL4C, SYTL3, INPP5D, PIP4K2A, LCP1, APBB1IP, IL32 
-PC_ 2 
-Positive:  MEG3, JUN, PLIN5, FOSB, FOS, ROBO1, CFD, DLGAP1, SGCZ, LSAMP 
-	   C7, ST6GALNAC5, APOE, ATRNL1, PDE4C, EPHA6, ENSG00000234147, MIR493HG, RIMS2, ENSG00000285336 
-	   KRT19, LINC03051, DLK1, SERPINE1, AOX1, PLA2G2A, ENSG00000286863, HOMER1, ENSG00000286481, PRR16 
-Negative:  PLCB4, VWF, EMCN, PTPRB, DIPK2B, ADGRL4, ANO2, EGFL7, CYYR1, FLT1 
-	   DACH1, ENSG00000289873, MECOM, KDR, CLEC14A, NR5A2, ENTPD1, ERG, BCAM, ADGRF5 
-	   CRIP2, TIE1, RAPGEF5, SHANK3, MYO5C, A2M, ICA1, MYCT1, MYRIP, ADCY4 
-PC_ 3 
-Positive:  VWF, DIPK2B, ANO2, PTPRB, EGFL7, EMCN, KDR, CYYR1, CLEC14A, ENSG00000289873 
-	   ADGRL4, TIE1, MECOM, ECSCR, SHANK3, MMRN1, GPM6A, ERG, ICA1, CDH5 
-	   NR5A2, MYO5C, ADCY4, ROBO4, DACH1, TEK, FLT1, CLDN5, MYRIP, TM4SF18 
-Negative:  RGS6, ADGRL3, MYOCD, PLN, MYH11, DGKG, LDB3, NTRK3, TAGLN, MCAM 
-	   CACNA1C, GUCY1A1, RRAD, TTLL7, NOTCH3, RERGL, KCNMA1, PARM1, CLMN, ACTA2 
-	   FAT3, ITGA7, HTR1F, ITGA8, TINAGL1, DTNA, IRAG1, EPHA3, PDE1A, DACH2 
-PC_ 4 
-Positive:  PRKCH, CD247, NKG7, GNLY, CST7, GZMH, GZMA, KLRD1, CCL5, SKAP1 
-	   GZMB, SAMD3, STAT4, PRF1, PYHIN1, KLRC2, KLRK1, IL32, C12orf75, CARD11 
-	   PRKCQ, TRBC1, SYTL3, FGFBP2, SLFN12L, ARL4C, KLRF1, PPP2R2B, KLRC3, DTHD1 
-Negative:  HCK, CLEC7A, AIF1, CYBB, KYNU, SPI1, LST1, IFI30, FGD2, MS4A7 
-	   TLR2, CD83, LILRB2, FCN1, RBM47, LYZ, SERPINA1, MARCHF1, TBXAS1, MNDA 
-	   CD86, SLC8A1, BCL2A1, MCTP1, TYMP, SLC11A1, RNF144B, PELATON, LRRC25, S100A9 
-PC_ 5 
-Positive:  FLT1, ADGRL4, VWF, DACH1, ANO2, CYYR1, CLEC14A, ENTPD1, PTPRB, EMCN 
-	   MECOM, ESAM, NOSTRIN, CD93, NES, MYRIP, GUCY1A1, EGFL7, NR5A2, ZNF366 
-	   LIMS2, PLCB4, A2M, SPARCL1, CRHBP, MCAM, HTR1F, ABCB1, FMO2, ENSG00000289873 
-Negative:  PTPRQ, CALB2, PKHD1L1, BNC1, MSLN, KRT18, ENSG00000276850, ERBB4, C19orf33, KRT8 
-	   SLPI, SHROOM3, UPK3B, LINC00842, NALF1, FRAS1, REEP1, ANXA3, CLDN15, IL18 
-	   WWC1, RBFOX1, DSC3, ITLN1, CXADR, KLK11, NELL2, SMPD3, CLIC5, FYB2 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
-To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
-This message will be shown once per session
-18:01:14 UMAP embedding parameters a = 0.9922 b = 1.112
-18:01:14 Read 24117 rows and found 20 numeric columns
-18:01:14 Using Annoy for neighbor search, n_neighbors = 30
-18:01:14 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:01:16 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1bcf9702b
-18:01:16 Searching Annoy index using 1 thread, search_k = 3000
-18:01:22 Annoy recall = 100%
-18:01:23 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:01:24 Found 2 connected components, falling back to 'spca' initialization with init_sdev = 1
-18:01:24 Using 'irlba' for PCA
-18:01:24 PCA: 2 components explained 52.98% variance
-18:01:24 Scaling init to sdev = 1
-18:01:24 Commencing optimization for 200 epochs, with 998320 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:01:35 Optimization finished
-Calculating cluster 0
-Calculating cluster 1
-Calculating cluster 2
-Calculating cluster 3
-Calculating cluster 4
-Calculating cluster 5
-Calculating cluster 6
-Calculating cluster 7
-Calculating cluster 8
-Calculating cluster 9
-Calculating cluster 10
-Calculating cluster 11
-Calculating cluster 12
-Calculating cluster 13
-Calculating cluster 14
-Calculating cluster 15
-Calculating cluster 16
-Calculating cluster 17
-Calculating cluster 18
-Warning: No DE genes identified
-Warning: The following tests were not performed: 
-Warning: When testing 0 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 1 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 2 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 3 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 4 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 5 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 6 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 7 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 8 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 9 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 10 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 11 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 12 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 13 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 14 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 15 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 16 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 17 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 18 versus all:
-	data layers are not joined. Please run JoinLayers
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |===                                                                   |   4%  |                                                                              |======                                                                |   8%  |                                                                              |========                                                              |  12%  |                                                                              |===========                                                           |  16%  |                                                                              |==============                                                        |  20%  |                                                                              |=================                                                     |  24%  |                                                                              |====================                                                  |  28%  |                                                                              |======================                                                |  32%  |                                                                              |=========================                                             |  36%  |                                                                              |============================                                          |  40%  |                                                                              |===============================                                       |  44%  |                                                                              |==================================                                    |  48%  |                                                                              |====================================                                  |  52%  |                                                                              |=======================================                               |  56%  |                                                                              |==========================================                            |  60%  |                                                                              |=============================================                         |  64%  |                                                                              |================================================                      |  68%  |                                                                              |==================================================                    |  72%  |                                                                              |=====================================================                 |  76%  |                                                                              |========================================================              |  80%  |                                                                              |===========================================================           |  84%  |                                                                              |==============================================================        |  88%  |                                                                              |================================================================      |  92%  |                                                                              |===================================================================   |  96%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  SRGN, MCTP1, ARHGAP26, HLA-DRB1, CD74, HLA-DRA, FLT1, PITPNC1, S100A4, HLA-DPA1 
-	   TYROBP, UPP1, LYZ, HDAC9, GMFG, ELMO1, FCER1G, VWF, CD93, SAMSN1 
-	   CD83, HLA-DPB1, TNFRSF1B, PECAM1, PTPRC, ADGRL4, AIF1, ANO2, ZNF385D, CHN2 
-Negative:  COL1A2, COL1A1, TAGLN, COL3A1, C11orf96, TPM2, TPM1, ACTA2, GPC6, SERPINE2 
-	   SPARC, MYL9, IGFBP7, CCDC80, PLA2G2A, C7, MEG8, RBP1, LSAMP, FN1 
-	   GSTM3, COL5A2, TIMP1, SFRP1, MYLK, UGDH, IL1R1, PRKG1, FBN1, THY1 
-PC_ 2 
-Positive:  PTPRC, SAMSN1, S100A4, ARHGAP15, IQGAP2, CCL4, LCP1, TYROBP, HCST, AOAH 
-	   CCL5, CD44, SRGN, STAT4, DUSP2, CORO1A, CD53, CD52, CXCR4, FCER1G 
-	   LYZ, CCL3, NKG7, PRKCB, PARP8, PIK3R5, TNFAIP3, ITGB2, LAPTM5, CST7 
-Negative:  VWF, ZNF385D, ANO2, ADGRL4, DIPK2B, LDB2, TM4SF1, PTPRB, PALMD, PREX2 
-	   EMCN, ENSG00000289873, ADAMTS9, CALCRL, AQP1, PLCB4, PCDH17, MECOM, ECSCR, CLDN5 
-	   RAPGEF4, ADGRF5, NR5A2, CDH5, TM4SF18, MAGI1, EPB41L4A, NOSTRIN, IGFBP7, TCF4 
-PC_ 3 
-Positive:  CCL5, NKG7, GZMA, GNLY, SKAP1, SYTL3, CST7, GZMB, PRKCH, PARP8 
-	   CXCR4, CD247, CNOT6L, GZMH, STAT4, CD69, PRF1, CD96, PTPN22, KLRD1 
-	   PPP1R16B, CD3D, CCL4, PTPRC, CD7, ITK, TRBC2, SCML4, LINC01871, TRAC 
-Negative:  LYZ, KYNU, AIF1, IL1B, S100A9, RBM47, CXCL8, IFI30, VCAN, EREG 
-	   CD14, SLC11A1, FCN1, FCER1G, C5AR1, S100A8, TIMP1, LST1, CD300E, ACSL1 
-	   MS4A6A, CD83, CXCL2, GK, FGD4, MNDA, TYMP, AQP9, BCL2A1, SOD2 
-PC_ 4 
-Positive:  SERPINE2, S100A10, CD55, CCDC80, PLA2G2A, ABLIM1, MEG8, SPRR2F, MARCHF3, COL3A1 
-	   CFD, COL1A2, LSAMP, COL1A1, CD34, FBN1, IGFBP6, SPARC, HTRA3, P3H2 
-	   PLOD2, SEMA3C, THY1, PI16, S100A16, SPON2, NEGR1, UGDH, IL1R1, MAST4 
-Negative:  MUSTN1, ADGRL3, RGS6, ADIRF, TINAGL1, GUCY1A1, HTR1F, DGKG, RERGL, PLN 
-	   PDE3A, PDE1A, PTP4A3, EPHA3, LDB3, NRGN, BCAM, NOTCH3, PDGFA, CACNA1C 
-	   MT1M, NTRK3, PPFIA2, MYH11, PARM1, PRUNE2, NDUFA4L2, DACH2, FAT3, CD9 
-PC_ 5 
-Positive:  ACSM3, IL1R1, ETV6, MYLK, KCNIP4, OSMR, IL1RAPL1, BMPR2, C7, CNTNAP2 
-	   ROBO2, ENTREP1, NLGN1, SFRP1, NR2F2-AS1, RBP1, MYH11, STARD13, HMOX1, HOMER1 
-	   RNF150, KAZN, PLPP3, PTPRG, GNA14, SYNE2, INSR, WWTR1, JUNB, TPM2 
-Negative:  IGFBP6, CRABP2, TPPP3, PI16, HTRA3, MFAP5, DBNDD2, H19, CCDC80, SEMA3C 
-	   CRIP2, S100A6, CLEC3B, SH3BGRL3, CD248, SLIT3, LINC01133, PTHLH, TUBA1B, MEDAG 
-	   ATP10A, PRSS23, CRIP1, EZR, IL11, SCARA5, ADGRD1, TAGLN2, S100A10, UCHL1 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:08:02 UMAP embedding parameters a = 0.9922 b = 1.112
-18:08:02 Read 19904 rows and found 20 numeric columns
-18:08:02 Using Annoy for neighbor search, n_neighbors = 30
-18:08:02 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:08:03 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b7de22df2
-18:08:03 Searching Annoy index using 1 thread, search_k = 3000
-18:08:08 Annoy recall = 100%
-18:08:10 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:08:11 Initializing from normalized Laplacian + noise (using RSpectra)
-18:08:18 Commencing optimization for 200 epochs, with 787104 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:08:26 Optimization finished
-Calculating cluster 0
-Calculating cluster 1
-Calculating cluster 2
-Calculating cluster 3
-Calculating cluster 4
-Calculating cluster 5
-Calculating cluster 6
-Calculating cluster 7
-Calculating cluster 8
-Calculating cluster 9
-Calculating cluster 10
-Calculating cluster 11
-Calculating cluster 12
-Calculating cluster 13
-Calculating cluster 14
-Calculating cluster 15
-Calculating cluster 16
-Warning: No DE genes identified
-Warning: The following tests were not performed: 
-Warning: When testing 0 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 1 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 2 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 3 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 4 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 5 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 6 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 7 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 8 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 9 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 10 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 11 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 12 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 13 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 14 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 15 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 16 versus all:
-	data layers are not joined. Please run JoinLayers
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |==                                                                    |   3%  |                                                                              |=====                                                                 |   7%  |                                                                              |=======                                                               |  10%  |                                                                              |==========                                                            |  14%  |                                                                              |============                                                          |  17%  |                                                                              |==============                                                        |  21%  |                                                                              |=================                                                     |  24%  |                                                                              |===================                                                   |  28%  |                                                                              |======================                                                |  31%  |                                                                              |========================                                              |  34%  |                                                                              |===========================                                           |  38%  |                                                                              |=============================                                         |  41%  |                                                                              |===============================                                       |  45%  |                                                                              |==================================                                    |  48%  |                                                                              |====================================                                  |  52%  |                                                                              |=======================================                               |  55%  |                                                                              |=========================================                             |  59%  |                                                                              |===========================================                           |  62%  |                                                                              |==============================================                        |  66%  |                                                                              |================================================                      |  69%  |                                                                              |===================================================                   |  72%  |                                                                              |=====================================================                 |  76%  |                                                                              |========================================================              |  79%  |                                                                              |==========================================================            |  83%  |                                                                              |============================================================          |  86%  |                                                                              |===============================================================       |  90%  |                                                                              |=================================================================     |  93%  |                                                                              |====================================================================  |  97%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  KRT19, SLPI, MSLN, KRT8, MUC16, KRT7, MAL2, ITGB8, KRT18, CFB 
-	   PLOD2, CDH1, EFNA5, C19orf33, CXADR, WFDC2, ENSG00000255595, ANXA3, SPINT2, NNMT 
-	   PTPRF, RARRES1, EPCAM, AP1M2, WWC1, DIAPH3, TM4SF1, ENSG00000226043, PAX8, KLK11 
-Negative:  CCL4, CCL4L2, S100A4, RGS1, IL32, CCL3, GPR183, TYROBP, IFNG, CCL3L3 
-	   RGS2, TNF, HLA-DPB1, LTB, ZNF331, FCER1G, PLEK, ATP8B4, XCL2, HLA-DPA1 
-	   BCL2A1, CD83, IFNG-AS1, GZMB, NFKB1, HLA-DQA2, HLA-DQA1, AIF1, LST1, PRDM1 
-PC_ 2 
-Positive:  S100A4, TRPS1, KRT19, CEBPB, SPINT2, MUC16, RBM47, CCL4, TSTD1, MAL2 
-	   EZR, WFDC2, SLPI, CDH1, C3, CCL4L2, DTNA, KRT7, MSLN, ITGB8 
-	   IL18, RGS1, MUC1, WWC1, TYROBP, CCL3L3, SEMA3B, CCL3, KLK8, EPCAM 
-Negative:  VWF, PTPRB, EMCN, ANO2, DIPK2B, EGFL7, ADGRL4, LDB2, ENSG00000289873, CALCRL 
-	   PLCB4, PREX2, CD34, CYYR1, ITGA6, TM4SF18, PTPRM, STOX2, NOSTRIN, SHANK3 
-	   DACH1, CLDN5, CDH5, LIFR, AFAP1L1, DNM3, NUAK1, PALMD, FLT1, MECOM 
-PC_ 3 
-Positive:  COL3A1, KCNT2, CCDC80, COL8A1, PTGIS, COL1A2, COL1A1, SERPING1, ENSG00000226043, AOX1 
-	   SULF1, RERG, SBSPON, RBFOX1, PTGER3, LSAMP, SVEP1, CACNB2, GAS1, TENM3 
-	   ROR1, THBS2, MIR100HG, PRG4, BCHE, PTPRQ, EFEMP1, RARRES1, FLRT2, CALB2 
-Negative:  CLDN3, ELF3, LINC03002, CLDN4, MACC1, ENSG00000248515, HLA-DRA, RHEX, UGT2B7, MUC1 
-	   CP, AIF1, IER3, RBM47, CD83, EHF, GRHL2, CXCL8, MS4A6A, CLEC7A 
-	   IFI30, KYNU, HLA-DRB1, HLA-DPA1, KLK6, S100A1, FCGR2A, OLR1, CD14, LYZ 
-PC_ 4 
-Positive:  ELF3, CLDN4, CLDN3, ENSG00000248515, UGT2B7, CP, MUC1, RHEX, GRHL2, S100A1 
-	   KLK6, EHF, VTCN1, UCA1, KRT23, CHODL, ENSG00000231295, KLK7, NRAD1, LINC01695 
-	   XKR4, TMPRSS4, FOLR1, RIMS2, SMIM22, SLC2A1, TTTY14, UBA6-DT, IL32, NECTIN4 
-Negative:  RBM47, IL18, AIF1, CD83, MS4A6A, CLEC7A, CD14, HLA-DRA, FCGR2A, KYNU 
-	   OLR1, TLR2, LYZ, MS4A7, IFI30, CXCL8, IL1B, MARCHF1, CD86, PLAUR 
-	   MNDA, MSR1, FCER1G, C5AR1, FPR3, IER3, LST1, CYBB, CSF2RA, RNASE6 
-PC_ 5 
-Positive:  SPOCK2, ABCB1, PRG4, SLPI, UPK3B, IL32, CST6, MSLN, KLK11, PTPRQ 
-	   NTNG1, LRP2, CPB1, KRT7, PCAT1, C19orf33, ENSG00000276850, PCP4, CLDN15, BNC1 
-	   CGN, CLIC5, ENSG00000255595, CALB2, CPA4, MAL2, PATJ, PDZK1IP1, LINC02360, CYP4B1 
-Negative:  C11orf96, NOTCH3, NDUFA4L2, SOD3, CACNA1C, COL1A2, PLAC9, AKAP12, RGS5, GUCY1A2 
-	   PDLIM3, DLC1, ADIRF, RCAN2, MYLK, GUCY1A1, GEM, CRISPLD2, COL3A1, COL1A1 
-	   ENPEP, GPX3, COX4I2, CCDC102B, PDGFA, COL4A1, HIGD1B, MYH11, RNF152, TBX2 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:13:54 UMAP embedding parameters a = 0.9922 b = 1.112
-18:13:54 Read 17183 rows and found 20 numeric columns
-18:13:54 Using Annoy for neighbor search, n_neighbors = 30
-18:13:54 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:13:55 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b26168c06
-18:13:55 Searching Annoy index using 1 thread, search_k = 3000
-18:14:00 Annoy recall = 100%
-18:14:00 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:14:02 Initializing from normalized Laplacian + noise (using RSpectra)
-18:14:05 Commencing optimization for 200 epochs, with 725534 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:14:11 Optimization finished
-Calculating cluster 0
-Calculating cluster 1
-Calculating cluster 2
-Calculating cluster 3
-Calculating cluster 4
-Calculating cluster 5
-Calculating cluster 6
-Calculating cluster 7
-Calculating cluster 8
-Calculating cluster 9
-Calculating cluster 10
-Calculating cluster 11
-Calculating cluster 12
-Calculating cluster 13
-Calculating cluster 14
-Calculating cluster 15
-Calculating cluster 16
-Calculating cluster 17
-Calculating cluster 18
-Calculating cluster 19
-Warning: No DE genes identified
-Warning: The following tests were not performed: 
-Warning: When testing 0 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 1 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 2 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 3 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 4 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 5 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 6 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 7 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 8 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 9 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 10 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 11 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 12 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 13 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 14 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 15 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 16 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 17 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 18 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 19 versus all:
-	data layers are not joined. Please run JoinLayers
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |==                                                                    |   4%  |                                                                              |=====                                                                 |   7%  |                                                                              |========                                                              |  11%  |                                                                              |==========                                                            |  14%  |                                                                              |============                                                          |  18%  |                                                                              |===============                                                       |  21%  |                                                                              |==================                                                    |  25%  |                                                                              |====================                                                  |  29%  |                                                                              |======================                                                |  32%  |                                                                              |=========================                                             |  36%  |                                                                              |============================                                          |  39%  |                                                                              |==============================                                        |  43%  |                                                                              |================================                                      |  46%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================                                |  54%  |                                                                              |========================================                              |  57%  |                                                                              |==========================================                            |  61%  |                                                                              |=============================================                         |  64%  |                                                                              |================================================                      |  68%  |                                                                              |==================================================                    |  71%  |                                                                              |====================================================                  |  75%  |                                                                              |=======================================================               |  79%  |                                                                              |==========================================================            |  82%  |                                                                              |============================================================          |  86%  |                                                                              |==============================================================        |  89%  |                                                                              |=================================================================     |  93%  |                                                                              |====================================================================  |  96%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  APOE, COL1A2, TSHZ2, ACSM3, MEG3, KCNIP4, C7, COL1A1, RBP1, STAR 
-	   PSD3, GREB1, PDZRN4, KCND2, MEG8, AFF3, DCN, APOC1, CYP11A1, PAPSS2 
-	   ADAM12, SMOC2, TPM2, WFDC1, LSAMP, TCF21, SYNPO2, GSTA1, TIAM1, DMD 
-Negative:  VWF, EMCN, ADGRL4, FLT1, PTPRB, ANO2, RBP7, CALCRL, EGFL7, CD34 
-	   CDH5, ERG, CYYR1, PTPRM, ARHGAP29, AFAP1L1, MECOM, PREX2, GRB10, DIPK2B 
-	   PECAM1, DYSF, ADGRF5, NOSTRIN, EMP1, TGFBR2, NFIB, ENSG00000289873, CLEC14A, PCDH17 
-PC_ 2 
-Positive:  PTPRC, SRGN, S100A4, TYROBP, ARHGAP15, AOAH, CXCR4, SAMSN1, CCL4, HLA-DRA 
-	   FCER1G, LCP1, CD52, AIF1, FYB1, CD48, CORO1A, CCL5, HCST, PRKCB 
-	   SYTL3, LYZ, CD74, PDE3B, DOCK2, CTSS, LAPTM5, DOCK8, ITGB2, CD44 
-Negative:  COL1A2, TPM2, COL1A1, TPM1, DCN, MYL9, COL5A2, ACTA2, MDK, FN1 
-	   COL4A2, LGALS1, PRKG1, COL4A1, GREB1, TAGLN, IGFBP7, TUBB, KCNIP4, BGN 
-	   PALLD, SYNPO2, OGN, DMD, TCF21, MYLK, VIM, TIMP1, LSAMP, PLCE1 
-PC_ 3 
-Positive:  TAGLN, OGN, FN1, HTRA1, MDK, CFD, LGALS1, PLAT, MYLK, ACTA2 
-	   VIM, KRT19, CASC15, SLCO3A1, MMP23B, CST3, S100A10, LGALS3, COL14A1, TUBA1A 
-	   ANXA2, SERPINE2, PLCL1, ANK2, SPON2, DCN, PTGIS, TCF21, CD44, ADAMTS2 
-Negative:  S100A13, STAR, CYP11A1, FDX1, INSL3, GSTA1, LHCGR, DHCR24, TIAM1, CYB5A 
-	   FDXR, TSHZ2, GALNT18, RBP1, APOA1, GRAMD1B, KLHL4, S100A16, THSD4, EPHX1 
-	   H19, POR, ANPEP, APOE, HHIP, APOC1, AK1, ACSM3, CILP, ALAS1 
-PC_ 4 
-Positive:  TOP2A, MKI67, UBE2C, TPX2, CENPF, NUSAP1, PRC1, KNL1, CDK1, CENPE 
-	   DLGAP5, ASPM, GTSE1, HMMR, KIF14, ANLN, KIF11, BIRC5, DEPDC1, CDKN3 
-	   NCAPG, PTTG1, KIF18B, CDCA3, CDC20, CDCA8, DIAPH3, CCNA2, KIFC1, NUF2 
-Negative:  KCNIP4, OGN, LSAMP, KRT19, GREB1, FN1, TCF21, SMOC2, LINC03051, SPARCL1 
-	   MMP23B, BMP6, COL1A1, UBXN8, DCN, NALF1, IGF1, HTRA1, COL1A2, PTGIS 
-	   TARID, SERPINF1, PALLD, SERPINE2, SCN7A, CXCL12, ANK2, PPARG, NEGR1, CCDC80 
-PC_ 5 
-Positive:  RGS5, NDUFA4L2, HTR1F, COX4I2, PLD5, SLIT3, SEPTIN4, PLAC9, CCDC102B, GUCY1A1 
-	   TBX2, CDH6, NGF, GUCY1A2, SLC38A11, ITGA7, CACNA1C, ADIRF, ENPEP, RNF152 
-	   DBNDD2, ADRA1A, HIGD1B, PRKG1, PIP5K1B, PGF, RGL3, NOTCH3, PLXDC1, FRAS1 
-Negative:  TOP2A, MKI67, ASPM, OGN, HMMR, DLGAP5, UBE2C, CENPE, CENPF, KIF14 
-	   KRT19, ANLN, LSAMP, NUSAP1, KNL1, DEPDC1, CDC20, S100A10, GTSE1, BIRC5 
-	   NCAPG, GREB1, PRC1, CCNB1, KIF11, CDCA8, COL1A1, LINC03051, CDKN3, PLK1 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:20:15 UMAP embedding parameters a = 0.9922 b = 1.112
-18:20:15 Read 25161 rows and found 20 numeric columns
-18:20:15 Using Annoy for neighbor search, n_neighbors = 30
-18:20:15 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:20:17 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b5f26b0b0
-18:20:17 Searching Annoy index using 1 thread, search_k = 3000
-18:20:24 Annoy recall = 100%
-18:20:25 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:20:26 Initializing from normalized Laplacian + noise (using RSpectra)
-18:20:32 Commencing optimization for 200 epochs, with 1024050 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:20:43 Optimization finished
-Calculating cluster 0
-Calculating cluster 1
-Calculating cluster 2
-Calculating cluster 3
-Calculating cluster 4
-Calculating cluster 5
-Calculating cluster 6
-Calculating cluster 7
-Calculating cluster 8
-Calculating cluster 9
-Calculating cluster 10
-Calculating cluster 11
-Calculating cluster 12
-Calculating cluster 13
-Calculating cluster 14
-Calculating cluster 15
-Calculating cluster 16
-Calculating cluster 17
-Warning: No DE genes identified
-Warning: The following tests were not performed: 
-Warning: When testing 0 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 1 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 2 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 3 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 4 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 5 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 6 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 7 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 8 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 9 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 10 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 11 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 12 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 13 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 14 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 15 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 16 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 17 versus all:
-	data layers are not joined. Please run JoinLayers
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |===                                                                   |   4%  |                                                                              |=====                                                                 |   7%  |                                                                              |========                                                              |  11%  |                                                                              |==========                                                            |  15%  |                                                                              |=============                                                         |  19%  |                                                                              |================                                                      |  22%  |                                                                              |==================                                                    |  26%  |                                                                              |=====================                                                 |  30%  |                                                                              |=======================                                               |  33%  |                                                                              |==========================                                            |  37%  |                                                                              |=============================                                         |  41%  |                                                                              |===============================                                       |  44%  |                                                                              |==================================                                    |  48%  |                                                                              |====================================                                  |  52%  |                                                                              |=======================================                               |  56%  |                                                                              |=========================================                             |  59%  |                                                                              |============================================                          |  63%  |                                                                              |===============================================                       |  67%  |                                                                              |=================================================                     |  70%  |                                                                              |====================================================                  |  74%  |                                                                              |======================================================                |  78%  |                                                                              |=========================================================             |  81%  |                                                                              |============================================================          |  85%  |                                                                              |==============================================================        |  89%  |                                                                              |=================================================================     |  93%  |                                                                              |===================================================================   |  96%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  CYP11A1, FHOD3, LHCGR, DHCR24, HSD3B2, MRO, SCARB1, MGST1, AREG, GRAMD1B 
-	   FRMD5, INHA, KLHL4, CCBE1, FDX1, ENSG00000287242, CACNA2D1, SEMA3A, KCNK3, STAR 
-	   HSD11B1, ALDH3A2, LINC03033, MRAP, LINC01807, RMDN2, PORCN, PAPPA, GSTA4, FDXR 
-Negative:  LDB2, VWF, ANO2, CALCRL, ADGRL4, FLT1, EMCN, ARHGAP29, EGFL7, CDH5 
-	   A2M, ENSG00000289873, ADGRF5, CD34, DIPK2B, TCF4, DYSF, PTPRB, GRB10, KDR 
-	   SPARCL1, PREX2, ENG, AFAP1L1, ROBO4, EMP1, PCDH17, SHANK3, TM4SF18, NPDC1 
-PC_ 2 
-Positive:  SRGN, TYROBP, FCER1G, LAPTM5, CTSS, LCP2, PLEK, SAMSN1, IFI30, AIF1 
-	   LYZ, CCL4, HLA-DRA, CD44, CD74, KYNU, CCL3, HLA-DPB1, RASGEF1B, BCL2A1 
-	   HLA-DPA1, CYBB, LYN, CD83, S100A9, FCGR3A, MS4A7, MS4A6A, CD14, LST1 
-Negative:  PTPRG, COL4A1, CALD1, MAGI1, CADPS2, MEIS2, FN1, S100A13, S100A16, PSD3 
-	   DLC1, KALRN, NFIB, COL5A2, MAP1B, TIMP1, PTPRM, SPARCL1, GNG11, PDLIM5 
-	   CTNNAL1, COL6A3, COL15A1, TPM2, COL6A2, MGP, LAMA4, PDE10A, GALNT18, COL6A1 
-PC_ 3 
-Positive:  VWF, ITGA6, ANO2, ADGRL4, NR5A2, PCDH17, EMCN, CDH5, ENSG00000289873, DIPK2B 
-	   DYSF, KDR, PTPRB, GALNT18, FLT1, ROBO4, PREX2, TM4SF18, RAPGEF4, PODXL 
-	   APLNR, HECW2, AFAP1L1, NOSTRIN, CD34, SHANK3, ECSCR, MECOM, TIE1, CYYR1 
-Negative:  COL1A2, COL3A1, COL1A1, COL6A1, EMILIN1, COL6A2, C7, PDGFRA, COL6A3, ROR2 
-	   COL5A1, SERPINF1, DCN, PDGFRB, COLEC11, TCF21, C1R, LAMA2, PCOLCE, TPM2 
-	   BICC1, BGN, THBS2, ADAMTS2, ADAMTS12, SERPINA3, TAGLN, COL5A2, ITGA11, SPON2 
-PC_ 4 
-Positive:  NKG7, CCL5, GZMA, CD69, KLRB1, GZMB, TOX, THEMIS, HOPX, GNLY 
-	   ETS1, TRDC, PPP1R16B, XCL2, PITPNC1, LTB, KCNQ5, ENSG00000270240, ICOS, INPP4B 
-	   ENSG00000276241, ST6GAL1, IFNG, NCAM1, NFATC2, TNIK, CCND2, GZMK, CEACAM21, LINC02446 
-Negative:  CTSB, PLAUR, IER3, IFI30, MSR1, CD83, CD68, C5AR1, ACSL1, CXCL2 
-	   CD14, AIF1, FTL, IL1B, FPR3, EPB41L3, KYNU, TGFBI, CD163, MS4A7 
-	   CXCL8, LYZ, BCL2A1, CXCL3, CTSL, DOCK4, NPL, MAFB, CTSD, PLIN2 
-PC_ 5 
-Positive:  AADAC, MT2A, FDX1, STAR, TNIK, DNAJC1, AREG, SEMA3A, TFPI2, PLCB1 
-	   DIRAS3, IL33, MRO, HSD3B2, LINC01807, ANGPTL4, KLHL4, S100A6, TM4SF1, RGS4 
-	   PITPNC1, HSD11B1, TIMP1, PORCN, RND3, CMAS, SLC7A2, MGST1, CYP11A1, S100A16 
-Negative:  INHBB, FSHR, ENSG00000284640, ST6GAL2, RBFOX1, ENSG00000255367, PWRN1, BUB1, LINC02701, RIMS4 
-	   CRHBP, TNNI3, KCNIP4, DSP, DIAPH3, TSPAN6, LPL, LINC01357, AMH, TLL2 
-	   SLC44A5, HS6ST1, PLP1, S100B, ASTN2, ENSG00000259345, LMBR1L, IHH, NAV2, ESR1 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:27:23 UMAP embedding parameters a = 0.9922 b = 1.112
-18:27:23 Read 14866 rows and found 20 numeric columns
-18:27:23 Using Annoy for neighbor search, n_neighbors = 30
-18:27:23 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:27:24 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b7a6c1ff7
-18:27:24 Searching Annoy index using 1 thread, search_k = 3000
-18:27:28 Annoy recall = 100%
-18:27:29 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:27:30 Found 2 connected components, falling back to 'spca' initialization with init_sdev = 1
-18:27:30 Using 'irlba' for PCA
-18:27:30 PCA: 2 components explained 38.02% variance
-18:27:30 Scaling init to sdev = 1
-18:27:30 Commencing optimization for 200 epochs, with 602274 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:27:36 Optimization finished
-Calculating cluster 0
-Calculating cluster 1
-Calculating cluster 2
-Calculating cluster 3
-Calculating cluster 4
-Calculating cluster 5
-Calculating cluster 6
-Calculating cluster 7
-Calculating cluster 8
-Calculating cluster 9
-Calculating cluster 10
-Calculating cluster 11
-Calculating cluster 12
-Calculating cluster 13
-Calculating cluster 14
-Calculating cluster 15
-Calculating cluster 16
-Calculating cluster 17
-Calculating cluster 18
-Calculating cluster 19
-Calculating cluster 20
-Calculating cluster 21
-Calculating cluster 22
-Calculating cluster 23
-Calculating cluster 24
-Calculating cluster 25
-Calculating cluster 26
-Calculating cluster 27
-Warning: No DE genes identified
-Warning: The following tests were not performed: 
-Warning: When testing 0 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 1 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 2 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 3 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 4 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 5 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 6 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 7 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 8 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 9 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 10 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 11 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 12 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 13 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 14 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 15 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 16 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 17 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 18 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 19 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 20 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 21 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 22 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 23 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 24 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 25 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 26 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 27 versus all:
-	data layers are not joined. Please run JoinLayers
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.5
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.6
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.7
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.8
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.5
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.6
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.7
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.8
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |==                                                                    |   3%  |                                                                              |=====                                                                 |   7%  |                                                                              |=======                                                               |  10%  |                                                                              |=========                                                             |  13%  |                                                                              |============                                                          |  17%  |                                                                              |==============                                                        |  20%  |                                                                              |================                                                      |  23%  |                                                                              |===================                                                   |  27%  |                                                                              |=====================                                                 |  30%  |                                                                              |=======================                                               |  33%  |                                                                              |==========================                                            |  37%  |                                                                              |============================                                          |  40%  |                                                                              |==============================                                        |  43%  |                                                                              |=================================                                     |  47%  |                                                                              |===================================                                   |  50%  |                                                                              |=====================================                                 |  53%  |                                                                              |========================================                              |  57%  |                                                                              |==========================================                            |  60%  |                                                                              |============================================                          |  63%  |                                                                              |===============================================                       |  67%  |                                                                              |=================================================                     |  70%  |                                                                              |===================================================                   |  73%  |                                                                              |======================================================                |  77%  |                                                                              |========================================================              |  80%  |                                                                              |==========================================================            |  83%  |                                                                              |=============================================================         |  87%  |                                                                              |===============================================================       |  90%  |                                                                              |=================================================================     |  93%  |                                                                              |====================================================================  |  97%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  KIAA1217, PARD3, ENSG00000248515, MEIS1, MECOM, PBX1, MAGI1, TEAD1, KAZN, NFIB 
-	   PCDH7, YAP1, AGAP1, RNF150, WWC1, PARD3B, BCAM, SHROOM3, KRT18, EHF 
-	   ELF3, MAL2, PDZD2, KRT8, EFNA5, PPFIBP1, PRKCI, WT1, BACE2, EVA1C 
-Negative:  VIM, ZEB2, S100A4, GNLY, PLEK, LTB, GPR183, ALOX5AP, OLR1, KCNQ5 
-	   ZEB1, MCTP1, PRDM1, TFEC, C1QA, IFI30, CCL3L3, MIR181A1HG, CD14, IL1B 
-	   LNCAROD, APOE, CCL4L2, ENSG00000227240, NR4A3, LGALS1, C1QB, CXCL8, GPR132, KYNU 
-PC_ 2 
-Positive:  WFDC2, MUC4, EYA2, ENSG00000248515, CHODL, MAL2, SLPI, MUC16, LINC00511, SLC34A2 
-	   ELF3, EHF, MUC1, KLK7, SHROOM3, S100A1, VTCN1, SPON1, LINC00578, PAX8 
-	   KRT8, SDC4, CXADR, KRT19, KRT18, GLDC, GPRC5A, CD24, H19, TMOD1 
-Negative:  SPARC, RBMS3, FBXL7, SPARCL1, HMCN1, IGFBP7, ADAMTS9-AS2, LHFPL6, COL4A1, BGN 
-	   CALCRL, MGP, ADGRF5, RHOJ, CASC15, COL3A1, CACNA1C, FBN1, PRKG1, CDH11 
-	   GNG11, PTPRB, ZNF521, VWF, COL1A2, DOCK6, APCDD1, LAMA4, ANO2, NOSTRIN 
-PC_ 3 
-Positive:  CST3, OLR1, IFI30, SPP1, MCTP1, FTH1, IL1B, PLEK, APOE, CXCL8 
-	   SPRED1, CD14, CCL3L3, C1QA, GPR183, TGFBI, PHACTR1, APOC1, TFEC, MITF 
-	   CD109, GPNMB, ENSG00000287124, C1QB, C15orf48, KYNU, FN1, KCNQ3, LNCAROD, LYZ 
-Negative:  SYNPO2, PPP2R2B, VWA3A, ARMC3, GNLY, RERG, ZFPM2-AS1, WDR49, HYDIN, SPATA17 
-	   CHD9NB, SOX6, LRRIQ1, DNAH6, LINC01515, ENSG00000256417, SLIT3, FAM13C, AR, MAPK10 
-	   TNIK, CAP2, JCAD, PTPRQ, KCNQ5, SLC16A9, LEF1, PDGFD, ENSG00000254951, LYPD6B 
-PC_ 4 
-Positive:  SYNPO2, ARMC3, PLEKHG2, WDR49, VWA3A, PTPRM, HYDIN, ZFPM2-AS1, H2BC5, SPATA17 
-	   RERG, ENSG00000291174, MAPK10, LRRIQ1, SLIT3, CHD9NB, H2BC4, SOX6, DNAH6, FAM13C 
-	   ENSG00000256417, H2AC6, OLR1, LINC01515, AR, CAP2, TAGLN, USP2-AS1, CST3, IFI30 
-Negative:  SPON1, MUC4, ENSG00000286133, GNLY, PLCB1, ADGRL2, NCAM1, LINC00578, TMOD1, SLC34A2 
-	   SPTBN1, CDKN2A, SLPI, GALNT17, FRMD5, LINC02257, MAL, DEFB1, CCDC85A, USP25 
-	   PDE4D, TMPRSS4, IGFBP2, SERPINA5, KCNQ5, STXBP6, CHODL, CALCRL-AS1, PLCE1, ENSG00000267327 
-PC_ 5 
-Positive:  COL1A2, COL1A1, COL3A1, COL6A3, LAMA2, COL5A2, BGN, COL5A1, DCN, KCND2 
-	   MEG3, COL14A1, THSD7B, COL8A1, CADPS, AEBP1, PDZRN3, PDGFRA, IGFBP5, COLEC11 
-	   C7, GRM7, VSTM4, EMILIN1, NR2F2-AS1, ISLR, ANTXR1, PRKG1, IRAG1, COL12A1 
-Negative:  VWF, ANO2, PTPRB, ADGRL4, CALCRL, CYYR1, ENSG00000289873, DIPK2B, PREX2, FLT1 
-	   NOSTRIN, EMCN, ENSG00000236501, PCDH17, ERG, NOX4, AFAP1L1, EGFL7, CLEC14A, SHANK3 
-	   CDH5, NR5A2, RAMP2, CD34, KDR, AQP1, ABCG2, PTCHD4, PCAT19, RXFP1 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:36:50 UMAP embedding parameters a = 0.9922 b = 1.112
-18:36:50 Read 61669 rows and found 20 numeric columns
-18:36:50 Using Annoy for neighbor search, n_neighbors = 30
-18:36:50 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:36:56 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b3191126f
-18:36:56 Searching Annoy index using 1 thread, search_k = 3000
-18:37:15 Annoy recall = 100%
-18:37:17 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:37:20 Found 2 connected components, falling back to 'spca' initialization with init_sdev = 1
-18:37:20 Using 'irlba' for PCA
-18:37:20 PCA: 2 components explained 52.24% variance
-18:37:20 Scaling init to sdev = 1
-18:37:20 Commencing optimization for 200 epochs, with 2565812 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:37:53 Optimization finished
-Calculating cluster 0
-Calculating cluster 1
-Calculating cluster 2
-Calculating cluster 3
-Calculating cluster 4
-Calculating cluster 5
-Calculating cluster 6
-Calculating cluster 7
-Calculating cluster 8
-Calculating cluster 9
-Calculating cluster 10
-Calculating cluster 11
-Calculating cluster 12
-Calculating cluster 13
-Calculating cluster 14
-Calculating cluster 15
-Calculating cluster 16
-Calculating cluster 17
-Calculating cluster 18
-Calculating cluster 19
-Calculating cluster 20
-Calculating cluster 21
-Calculating cluster 22
-Warning: No DE genes identified
-Warning: The following tests were not performed: 
-Warning: When testing 0 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 1 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 2 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 3 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 4 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 5 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 6 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 7 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 8 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 9 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 10 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 11 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 12 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 13 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 14 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 15 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 16 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 17 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 18 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 19 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 20 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 21 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 22 versus all:
-	data layers are not joined. Please run JoinLayers
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |==                                                                    |   3%  |                                                                              |=====                                                                 |   7%  |                                                                              |=======                                                               |  10%  |                                                                              |==========                                                            |  14%  |                                                                              |============                                                          |  17%  |                                                                              |==============                                                        |  21%  |                                                                              |=================                                                     |  24%  |                                                                              |===================                                                   |  28%  |                                                                              |======================                                                |  31%  |                                                                              |========================                                              |  34%  |                                                                              |===========================                                           |  38%  |                                                                              |=============================                                         |  41%  |                                                                              |===============================                                       |  45%  |                                                                              |==================================                                    |  48%  |                                                                              |====================================                                  |  52%  |                                                                              |=======================================                               |  55%  |                                                                              |=========================================                             |  59%  |                                                                              |===========================================                           |  62%  |                                                                              |==============================================                        |  66%  |                                                                              |================================================                      |  69%  |                                                                              |===================================================                   |  72%  |                                                                              |=====================================================                 |  76%  |                                                                              |========================================================              |  79%  |                                                                              |==========================================================            |  83%  |                                                                              |============================================================          |  86%  |                                                                              |===============================================================       |  90%  |                                                                              |=================================================================     |  93%  |                                                                              |====================================================================  |  97%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  SPARC, RBMS3, COL4A1, COL4A2, LAMA4, SPARCL1, FBXL7, TCF4, ZEB1, DLC1 
-	   MGP, LDB2, FSTL1, FBN1, ENG, MSRB3, COL6A2, CACNA1C, AKT3, COL15A1 
-	   ADAMTS9, ERG, CALCRL, EBF1, RHOJ, ZNF521, GNG11, HSPG2, PDE10A, CAVIN1 
-Negative:  RHEX, WFDC2, UGT2B7, ERBB4, SCGB2A1, CERNA2, SLPI, ENSG00000286546, ENSG00000248515, CD24 
-	   UBE2D2, DAPL1, C2orf88, LINC00511, KRT19, LINC01320, CHODL, CP, RIMKLB, LINC02672 
-	   DMKN, RMST, SCGB1D2, RGS6, KRT8, POU5F1, GRIP1, KRT7, LINC02438, NPAS3 
-PC_ 2 
-Positive:  TYROBP, LAPTM5, FCER1G, RGS1, CCL3, APBB1IP, ZEB2, CD44, CCL4, CD14 
-	   PLEK, ITGB2, LCP2, ATP8B4, S100A4, CCL3L3, OLR1, TYMP, CLEC7A, CCL4L2 
-	   AIF1, IL1B, SPP1, GPR183, PDE4B, GAS7, KYNU, MSR1, CYBB, C1QA 
-Negative:  MECOM, PTPRG, ENSG00000248515, LINC01320, RHEX, RIMKLB, ERBB4, UBE2D2, SOX4, NPAS3 
-	   UGT2B7, IFI27, ENSG00000286546, LINC00511, GRIP1, CPE, CHODL, EPB41L5, CERNA2, NRG3 
-	   RGS6, SCGB2A1, C2orf88, IGFBP2, WFDC2, NRXN3, LRRC41, KRT8, LBH, SLPI 
-PC_ 3 
-Positive:  COL1A2, COL1A1, COL6A3, COL3A1, DCN, GRM7, MEG3, BICC1, SYNPO2, GRIK2 
-	   COLEC11, COL6A1, NR2F2-AS1, TPM2, ANTXR1, COL5A1, COL5A2, AEBP1, PDGFRA, KLHDC8A 
-	   C7, FHL2, GATA4, ACTA2, THSD7B, MAPK10, BGN, EMILIN1, PRKG1, GLI2 
-Negative:  VWF, ADGRL4, ENSG00000289873, PTPRB, FLT1, EMCN, ANO2, CD34, DIPK2B, CYYR1 
-	   AFAP1L1, DYSF, KDR, GRB10, CDH5, PCDH17, ENSG00000236501, PECAM1, CLEC14A, EGFL7 
-	   RAMP2, EMP1, NR5A2, RAPGEF4, ECSCR, SHANK3, NOTCH4, ROBO4, CALCRL, NOSTRIN 
-PC_ 4 
-Positive:  GRM7, ATRNL1, GRIK2, KLHDC8A, C7, GATA4, PDGFRA, ITGA9, ESR2, NALF1 
-	   SFRP1, CLMP, DPYSL3, COLEC11, ROBO2, FLRT2, MEG3, NSG1, MYOCD, SNED1 
-	   PRICKLE1, PCSK6, MEG8, TENM4, PLCXD3, PEG3, ENPP6, HMCN1, LAMA1, GLI2 
-Negative:  NDUFA4L2, HTR1F, RGS5, HIGD1B, CCDC102B, PLXDC1, SLIT3, COL5A3, ENPEP, PLAC9 
-	   SEPTIN4, GUCY1A1, CAMK2N1, NOTCH3, TPPP3, GUCY1A2, COX4I2, EBF2, CSPG4, PXDNL 
-	   GUCY1B1, OLFML2B, RNF152, PGF, SEMA5A, EPHA3, GJC1, CD248, ABCC9, EDNRA 
-PC_ 5 
-Positive:  CD247, CD96, NKG7, GNLY, STAT4, CTSW, KLRB1, CD7, KLRC1, KLRD1 
-	   GZMA, IL2RB, CD52, XCL2, TRDC, KLRC2, SAMD3, TRG-AS1, ZNF683, CCL5 
-	   KRT81, LINC01871, XCL1, KCNQ5, KLRC3, CLNK, SCML4, TNFRSF18, PPP2R2B, CD2 
-Negative:  SPP1, PLAUR, CCL3L3, OLR1, CD14, TGFBI, IL1B, APOC1, TREM2, IFI30 
-	   MSR1, C1QA, ENSG00000249001, SLC16A10, CLEC7A, ABCA1, C1QC, RIPK2, C1QB, PLEK 
-	   NR4A3, AIF1, BCL2A1, LPCAT2, ICAM1, CD86, TYMP, MCTP1, HLA-DRA, CCL4L2 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:51:49 UMAP embedding parameters a = 0.9922 b = 1.112
-18:51:49 Read 14392 rows and found 20 numeric columns
-18:51:49 Using Annoy for neighbor search, n_neighbors = 30
-18:51:49 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:51:50 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b3bd8834e
-18:51:50 Searching Annoy index using 1 thread, search_k = 3000
-18:51:55 Annoy recall = 100%
-18:51:56 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:51:57 Initializing from normalized Laplacian + noise (using RSpectra)
-18:51:59 Commencing optimization for 200 epochs, with 567848 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:52:04 Optimization finished
-Calculating cluster 0
-Calculating cluster 1
-Calculating cluster 2
-Calculating cluster 3
-Calculating cluster 4
-Calculating cluster 5
-Calculating cluster 6
-Calculating cluster 7
-Calculating cluster 8
-Calculating cluster 9
-Calculating cluster 10
-Calculating cluster 11
-Calculating cluster 12
-Calculating cluster 13
-Calculating cluster 14
-Calculating cluster 15
-Calculating cluster 16
-Calculating cluster 17
-Calculating cluster 18
-Calculating cluster 19
-Calculating cluster 20
-Warning: No DE genes identified
-Warning: The following tests were not performed: 
-Warning: When testing 0 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 1 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 2 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 3 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 4 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 5 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 6 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 7 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 8 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 9 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 10 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 11 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 12 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 13 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 14 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 15 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 16 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 17 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 18 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 19 versus all:
-	data layers are not joined. Please run JoinLayers
-Warning: When testing 20 versus all:
-	data layers are not joined. Please run JoinLayers
-Normalizing layer: counts.1
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.2
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.3
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Normalizing layer: counts.4
-Performing log-normalization
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.1
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.2
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.3
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts.4
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Centering and scaling data matrix
-  |                                                                              |                                                                      |   0%  |                                                                              |===                                                                   |   4%  |                                                                              |=====                                                                 |   7%  |                                                                              |========                                                              |  11%  |                                                                              |==========                                                            |  15%  |                                                                              |=============                                                         |  19%  |                                                                              |================                                                      |  22%  |                                                                              |==================                                                    |  26%  |                                                                              |=====================                                                 |  30%  |                                                                              |=======================                                               |  33%  |                                                                              |==========================                                            |  37%  |                                                                              |=============================                                         |  41%  |                                                                              |===============================                                       |  44%  |                                                                              |==================================                                    |  48%  |                                                                              |====================================                                  |  52%  |                                                                              |=======================================                               |  56%  |                                                                              |=========================================                             |  59%  |                                                                              |============================================                          |  63%  |                                                                              |===============================================                       |  67%  |                                                                              |=================================================                     |  70%  |                                                                              |====================================================                  |  74%  |                                                                              |======================================================                |  78%  |                                                                              |=========================================================             |  81%  |                                                                              |============================================================          |  85%  |                                                                              |==============================================================        |  89%  |                                                                              |=================================================================     |  93%  |                                                                              |===================================================================   |  96%  |                                                                              |======================================================================| 100%
-PC_ 1 
-Positive:  GNLY, CXCL13, IFNG-AS1, CRTAM, IGLC2, KCNQ5, MZB1, GZMK, DLGAP1, MDM2 
-	   TNFRSF4, GEM, IL2RA, GPR183, XCL2, CCL4L2, JSRP1, TRDC, LINC02099, JCHAIN 
-	   IGHG1, IGHG4, IGLC3, RGS16, IGHG3, POU2AF1, CD79A, CCR7, PLAC8, ITM2C 
-Negative:  ENSG00000248515, MEIS1, NFIB, MECOM, RHEX, NPAS3, RIMS2, PARD3, GLIS3, PBX1 
-	   CDC42BPA, KIAA1217, SPON1, ELF3, YAP1, UGT2B7, EPCAM, WT1, MUC1, MYO10 
-	   CLDN3, SGCD, WFDC2, SLC34A2, PCDH7, NXN, CHI3L1, ENSG00000286133, KRT18, CLDN4 
-PC_ 2 
-Positive:  PLXDC2, DOCK4, SLC8A1, FCER1G, TYROBP, CST3, IFI30, MSR1, CD68, DMXL2 
-	   CD14, FMNL2, CYBB, LYZ, AIF1, PLAUR, FCGR3A, FCGR1A, GRN, TMEM176B 
-	   TGFBI, RAB31, CALHM6, TFEC, FN1, FPR3, TLR2, MS4A6A, SERPINA1, EPB41L3 
-Negative:  NCALD, PDE4D, OCIAD2, ABLIM1, CDKN2A, PATJ, GNLY, TBCD, LRIG1, CHODL 
-	   GAS5, ENSG00000248515, SPON1, DANCR, RIMS2, CXCL13, TMEM238, ADGRG1, UGT2B7, CD24 
-	   RHEX, IFNG-AS1, WFDC2, EPCAM, LYPD6B, CLDN3, ELF3, UBE2D2, MUC16, PCAT1 
-PC_ 3 
-Positive:  SLC25A5, S100A14, MT1G, ASRGL1, CHCHD10, ATP5MC3, CLDN3, RAB5IF, COX5B, UQCRH 
-	   SPINT2, HMGA1, WFDC2, COX7A2, ATP5MK, PPP1R1B, ENSG00000291113, PCBD1, DEFB1, S100A1 
-	   CYC1, CD24, COX7B, MRPL12, CXCL16, KLK8, HSPE1, COX6C, CDKN2A, EPCAM 
-Negative:  SPARC, FSTL1, CAVIN1, FBXL7, FBN1, COL1A2, LAMB1, COL3A1, RBPMS, COL5A2 
-	   COL6A2, IGFBP7, COL1A1, BGN, APBB2, SPARCL1, COL6A1, RARRES2, CCDC80, ANTXR1 
-	   PRKG1, CALD1, CDH11, ADAMTS2, DCN, LAMA4, COL4A1, COL4A2, THBS2, COL5A1 
-PC_ 4 
-Positive:  MUC16, DNAH5, TRIO, RIMS2, PCAT1, LINC00578, ENSG00000286133, SHROOM3, RIPK2-DT, XKR4 
-	   COL23A1, IGF2BP2, SNTG2, SGCD, SAMD12, MOB3B, ERBB4, APOBEC3A, EGFR, ARHGAP26 
-	   MT-ND4L, EPB41L1, ST6GAL1, PTPRM, GPR141, PRUNE2, ENSG00000248515, ZBTB7C, ENSG00000256417, ITGB8 
-Negative:  ATP5MC3, RPS5, COX7A2, TPI1, COX6C, PTTG1, RPL8, SLC25A5, PRDX5, TYMS 
-	   ANAPC11, NDUFB2, CKS1B, SF3B6, TXN, NDUFAB1, COX7B, UQCRH, NDUFS6, BIRC5 
-	   COX5B, SEM1, RPL7, MIF, TK1, ATP5F1B, TOMM5, SSBP1, UBE2C, PRDX6 
-PC_ 5 
-Positive:  VEGFA, AQP9, APOBEC3A, VCAN, TREM1, S100A8, S100A9, CD300E, TIMP1, FCN1 
-	   BNIP3, IL1B, LAMA3, EREG, RETN, TCIM, LAMB3, CXCL8, NLRP3, C15orf48 
-	   XDH, LUCAT1, G0S2, ANGPTL4, FLNA, IER3, HK2, IL1RN, TAGLN, PLIN2 
-Negative:  JCHAIN, DERL3, TCF4, TXNDC5, COL24A1, FCRL5, MZB1, ANKRD36BP2, POU2AF1, NAPSB 
-	   ITM2C, LINC01374, CLEC4C, PLD4, WDFY4, CD79A, TNFRSF17, TSPAN13, IGHG1, DNASE1L3 
-	   ENSG00000249988, P2RY14, BCL11A, LILRA4, SPIB, NIBAN3, CUX2, LAMP5, RGS7, MIR4432HG 
-Computing nearest neighbor graph
-Computing SNN
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:56:54 UMAP embedding parameters a = 0.9922 b = 1.112
-18:56:54 Read 18602 rows and found 20 numeric columns
-18:56:54 Using Annoy for neighbor search, n_neighbors = 30
-18:56:54 Building Annoy index with metric = cosine, n_trees = 50
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:56:56 Writing NN index file to temp file /scratch/RtmpUQRjjA/filef4d1b1b148e0c
-18:56:56 Searching Annoy index using 1 thread, search_k = 3000
-18:57:01 Annoy recall = 100%
-18:57:02 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
-18:57:03 Found 2 connected components, falling back to 'spca' initialization with init_sdev = 1
-18:57:03 Using 'irlba' for PCA
-18:57:04 PCA: 2 components explained 62.2% variance
-18:57:04 Scaling init to sdev = 1
-18:57:04 Commencing optimization for 200 epochs, with 829550 positive edges
-Using method 'umap'
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-18:57:11 Optimization finished

@@ -1,0 +1,1438 @@
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Rows: 60 Columns: 8
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (7): Run, Sample Name, pathology, source_name, SRA Study, tissue_type, t...
+dbl (1): age
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.5
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.6
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.7
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.8
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.5
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.6
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.7
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.8
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.5
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.6
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.7
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.8
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.9
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.10
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.11
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.12
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.5
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.6
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.7
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.8
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.9
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.10
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.11
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.12
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.4
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: Default search for "data" layer in "RNA" assay yielded no results; utilizing "counts" layer instead.
+Normalizing layer: counts.1
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.2
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.3
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599220
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599221
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599222
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599223
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599224
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599226
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599227
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599228
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.10.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.11.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.12.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599230
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.1.GSM5599231
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599220
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599221
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599222
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599223
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599224
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599226
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599227
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599228
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599230
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.2.GSM5599231
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599220
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599221
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599222
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599223
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599224
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599226
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599227
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599228
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599230
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.3.GSM5599231
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599220
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599221
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599222
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599223
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599224
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599226
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599227
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599228
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.4.GSM5599230
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.5.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.6.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.7.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.8.GSM5599225
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.5.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.6.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.7.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.8.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.9.GSM5599229
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+PC_ 1 
+Positive:  CCL5, RGS1, CD69, CCL4, CD52, LCP2, CD247, S100A4, CCL3, HLA-DRB1 
+	   TYROBP, CD74, HLA-DPB1, HLA-DQA1, HLA-DPA1, NKG7, GZMA, HLA-DRA, FCER1G, CD83 
+	   PLEK, HLA-DQB1, LTB, GPR183, IGKC, CCL4L2, AIF1, GNLY, CCL3L3, CYBB 
+Negative:  CALD1, IGFBP7, SPARC, FBXL7, RBMS3, APBB2, PTPRG, COL6A2, COL4A2, ZFPM2 
+	   WWTR1, COL6A1, COL1A2, MYL9, TPM2, DPYSL3, COL1A1, SPARCL1, IGFBP4, COL4A1 
+	   COL3A1, IGFBP2, CAVIN1, FBN1, MAGI1, MGP, COL6A3, MIR99AHG, LAMA4, TPM1 
+PC_ 2 
+Positive:  DCN, COL1A1, COL6A3, COL3A1, COL1A2, COL6A2, COL6A1, COL5A1, COL5A2, SERPINF1 
+	   GPC6, AEBP1, PDGFRA, BICC1, C11orf96, EMILIN1, LAMA2, IGFBP4, FBN1, SMOC2 
+	   PRKG1, ACTA2, SPARC, CDH11, C1R, RARRES2, ANTXR1, NEGR1, BNC2, LSAMP 
+Negative:  MECOM, ENSG00000248515, RHEX, WFDC2, SAMD12, BCAM, EYA2, CLDN4, MUC1, KRT8 
+	   KIAA1217, PAX8, KRT18, WWC1, EPCAM, LINC00511, CP, DSP, CHODL, SHROOM3 
+	   ERBB4, KRT7, PATJ, NPAS3, TACSTD2, ITGB8, SDC4, STXBP6, LYPD6B, CHD9NB 
+PC_ 3 
+Positive:  VWF, ADGRL4, EMCN, PTPRB, DIPK2B, ANO2, CDH5, EGFL7, ENSG00000289873, FLT1 
+	   PCDH17, CLEC14A, CYYR1, NOSTRIN, TM4SF18, CALCRL, ROBO4, SHANK3, ECSCR, KDR 
+	   ESAM, ADGRF5, RBP7, DYSF, AFAP1L1, TIE1, RAMP3, CLDN5, CD34, CD93 
+Negative:  KRT19, NAALADL2, WWC1, ENSG00000248515, RNF150, SPON1, WFDC2, PCDH7, CLDN4, RHEX 
+	   BMPR1B, MUC1, ITGB8, KRT18, SPINT2, PAX8, KRT8, ESR1, SHROOM3, EPCAM 
+	   LINC00511, CFB, TENM4, KRT7, EYA2, IGF2BP2, MACROD2, ERBB4, RARRES2, NPAS3 
+PC_ 4 
+Positive:  CD247, GZMA, NKG7, CD52, CCL5, GNLY, LTB, INPP4B, KLRB1, GZMB 
+	   GZMH, IFNG, CD69, XCL2, CLNK, KCNQ5, ITGA1, IGKC, ENSG00000227240, ABCB1 
+	   LINC02694, KLRC1, IFNG-AS1, XCL1, MZB1, IL12RB2, LINC02446, IGLC2, PDGFD, IGHG1 
+Negative:  SLC8A1, CD83, PLAUR, CD14, IER3, AIF1, IFI30, OLR1, MSR1, IL1B 
+	   C1QA, CYBB, MS4A6A, KYNU, MCTP1, LYZ, CD68, TGFBI, C1QB, HLA-DRA 
+	   CXCL8, PLEK, FTL, C1QC, CD86, RIPK2, CSF2RA, TFEC, MS4A7, SPRED1 
+PC_ 5 
+Positive:  MIR99AHG, ADAMTS9-AS2, KCNIP4, NAV3, APOE, LAMA2, INSR, PDZRN4, MCC, BNC2 
+	   NLGN1, RBP1, SMOC2, AKAP12, CHRM3, RBMS3, SYNPO2, GALNT17, ANK2, PELI2 
+	   MLF1, PDGFRA, SERPINE2, PDK4, HOMER1, CCBE1, EPHA6, AFF3, PLPP3, EBF1 
+Negative:  CTHRC1, MMP11, FAP, NTM, KIF26B, COL8A1, SULF1, COL11A1, PRRX1, VCAN 
+	   MXRA5, PTGDS, ISM1, INHBA, GUCY1A1, CTSK, NCAM2, TENM3, CACNA1C, SGIP1 
+	   LUM, ITGBL1, THBS2, DIO2, PCOLCE, THY1, EGFL6, PLAU, ISG15, COL5A2 
+Error in getGlobalsAndPackages(expr, envir = envir, globals = globals) : 
+  The total size of the 60 globals exported for future expression (‘FUN()’) is 5.36 GiB.. This exceeds the maximum allowed size of 500.00 MiB (option 'future.globals.maxSize'). The three largest globals are ‘FUN’ (2.68 GiB of class ‘function’), ‘object.list’ (2.68 GiB of class ‘list’) and ‘abort’ (25.61 KiB of class ‘function’)
+Calls: IntegrateLayers ... getGlobalsAndPackagesXApply -> getGlobalsAndPackages
+Execution halted
