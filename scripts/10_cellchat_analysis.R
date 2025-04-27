@@ -7,7 +7,7 @@
 #    devtools::install_github("sqjin/CellChat")
 
 # Load required libraries
-library(CellChat)
+library(CellChat, lib="/gpfs/commons/home/jameslee/R/x86_64-pc-linux-gnu-library/4.4/")
 library(Seurat)
 library(dplyr)
 library(ggplot2)
