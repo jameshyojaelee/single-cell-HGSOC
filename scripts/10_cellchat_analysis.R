@@ -16,7 +16,7 @@ library(readr)
 library(future)
 
 # Increase memory limit if needed (CellChat can be memory intensive)
-options(future.globals.maxSize = 200 * 1024^3) # 80GB limit, adjust as needed
+options(future.globals.maxSize = 200 * 1024^3) 
 
 # --- Configuration ---
 
