@@ -1,0 +1,57 @@
+WARNING: ignoring environment value of R_HOME
+[1] "Found 12 preprocessed files to integrate:"
+ [1] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599220_preprocessed.rds"
+ [2] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599221_preprocessed.rds"
+ [3] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599222_preprocessed.rds"
+ [4] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599223_preprocessed.rds"
+ [5] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599224_preprocessed.rds"
+ [6] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599225_preprocessed.rds"
+ [7] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599226_preprocessed.rds"
+ [8] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599227_preprocessed.rds"
+ [9] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599228_preprocessed.rds"
+[10] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599229_preprocessed.rds"
+[11] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599230_preprocessed.rds"
+[12] "/gpfs/commons/home/jameslee/HGSOC/output/seurat/GSM5599231_preprocessed.rds"
+[1] "Loading GSM5599220"
+[1] "Loading GSM5599221"
+[1] "Loading GSM5599222"
+[1] "Loading GSM5599223"
+[1] "Loading GSM5599224"
+[1] "Loading GSM5599225"
+[1] "Loading GSM5599226"
+[1] "Loading GSM5599227"
+[1] "Loading GSM5599228"
+[1] "Loading GSM5599229"
+[1] "Loading GSM5599230"
+[1] "Loading GSM5599231"
+[1] "Loaded 12 samples for integration"
+[1] "Starting integration workflow..."
+[1] "Merging samples..."
+             used    (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells    3537799   189.0    6505714   347.5    6505714   347.5
+Vcells 2174932949 16593.5 5842810851 44577.2 5842791720 44577.0
+[1] "Finding variable features..."
+[1] "Scaling data..."
+[1] "Running PCA..."
+[1] "Saving pre-integration checkpoint..."
+[1] "Integrating with CCAIntegration (this may take a while)..."
+[1] "Saving post-integration checkpoint..."
+[1] "Joining layers..."
+[1] "Running downstream analysis..."
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 297478
+Number of edges: 12483489
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.9138
+Number of communities: 44
+Elapsed time: 244 seconds
+[1] "Saving integrated object..."
+[1] "Creating visualizations..."
+null device 
+          1 
+[1] "Integration and analysis complete!"
+[1] "Results saved to:"
+[1] "/gpfs/commons/home/jameslee/HGSOC/output/seurat"
+Integration job completed

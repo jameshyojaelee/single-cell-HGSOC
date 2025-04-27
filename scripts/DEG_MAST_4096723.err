@@ -1,0 +1,24 @@
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Error in MASTDETest(data.use = data.use, cells.1 = cells.1, cells.2 = cells.2,  : 
+  Please install MAST - learn more at https://github.com/RGLab/MAST
+Calls: FindMarkers ... FindMarkers -> FindMarkers.default -> PerformDE -> MASTDETest
+Execution halted

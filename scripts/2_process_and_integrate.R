@@ -11,6 +11,10 @@ library(readr)
 library(stringr)
 library(future)
 
+# Increase the memory limit for future (important for large datasets)
+# Set to 8GB or adjust based on your available memory
+options(future.globals.maxSize = 8 * 1024^3)
+
 # Set working directory and paths
 base_dir <- "/gpfs/commons/home/jameslee/HGSOC"
 metadata_path <- file.path(base_dir, "metadata/GSE184880_metadata.csv")
@@ -89,16 +93,24 @@ for (sample_name in names(seurat_samples)) {
 # STEP 2: Integration of all samples
 if (length(filtered_samples) > 1) {
   print("Integrating all samples...")
-
+  
+  # Clear unneeded objects to free memory
+  gc()
+  
   # Merge all samples into one object for IntegrateLayers
+  print("Merging samples...")
   merged <- merge(filtered_samples[[1]], y = filtered_samples[-1], add.cell.ids = names(filtered_samples))
-
+  
+  # Free memory
+  rm(filtered_samples)
+  gc()
+  
   # Feature selection - benefits from parallelization
   plan("multicore", workers = 8)
   print("Finding variable features...")
   merged <- FindVariableFeatures(merged, selection.method = "vst", nfeatures = 1000)
   
-  # Scale data - doesn't benefit as much from parallelization for most datasets
+  # Scale data - sequential processing is fine for most datasets
   plan("sequential")
   print("Scaling data...")
   merged <- ScaleData(merged)
@@ -107,26 +119,30 @@ if (length(filtered_samples) > 1) {
   plan("multicore", workers = 8)
   print("Running PCA...")
   merged <- RunPCA(merged, npcs = 30)
-
-  # Integration - benefits from parallelization
-  print("Integrating with CCAIntegration...")
+  
+  # Switch to sequential for integration to avoid memory issues
+  plan("sequential")
+  print("Integrating with CCAIntegration (this may take a while)...")
   merged <- IntegrateLayers(
     object = merged,
     method = CCAIntegration,
     orig.reduction = "pca",
     new.reduction = "integrated.cca",
-    verbose = FALSE
+    verbose = TRUE
   )
-
+  
   # Join layers
-  plan("sequential")
   merged[["RNA"]] <- JoinLayers(merged[["RNA"]])
+  
   print("Finding neighbors...")
   merged <- FindNeighbors(merged, reduction = "integrated.cca", dims = 1:30)
   merged <- FindClusters(merged, resolution = 1)
   merged <- RunUMAP(merged, dims = 1:30, reduction = "integrated.cca")
+  
+  # Save intermediate result in case something fails later
+  print("Saving integrated object...")
   saveRDS(merged, file.path(output_dir, "integrated_seurat.rds"))
-
+  
   print("Complete pipeline finished successfully!")
 } else {
   print("ERROR: At least two samples are required for integration.")

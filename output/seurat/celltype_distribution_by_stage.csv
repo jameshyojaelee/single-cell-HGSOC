@@ -1,0 +1,71 @@
+"Tumor Stage","Cell Type","Cell Count","Percentage","Stage Total"
+"Normal","Non-immune cells",37995,"37.53%",101231
+"Normal","Unknown",17481,"17.27%",101231
+"Normal","CD8+ NKT-like cells",11972,"11.83%",101231
+"Normal","Naive CD4+ T cells",9480,"9.36%",101231
+"Normal","Endothelial",8081,"7.98%",101231
+"Normal","CD4+ NKT-like cells",4133,"4.08%",101231
+"Normal","Memory CD4+ T cells",4081,"4.03%",101231
+"Normal","Neutrophils",2166,"2.14%",101231
+"Normal","Macrophages",1506,"1.49%",101231
+"Normal","Myeloid Dendritic cells",1094,"1.08%",101231
+"Normal","ISG expressing immune cells",996,"0.98%",101231
+"Normal","Naive B cells",886,"0.88%",101231
+"Normal","Non-classical monocytes",830,"0.82%",101231
+"Normal","Pre-B cells",530,"0.52%",101231
+"IC2","Non-immune cells",11595,"25.31%",45816
+"IC2","CD8+ NKT-like cells",10331,"22.55%",45816
+"IC2","Memory CD4+ T cells",5414,"11.82%",45816
+"IC2","CD4+ NKT-like cells",4146,"9.05%",45816
+"IC2","Naive B cells",2910,"6.35%",45816
+"IC2","Naive CD4+ T cells",2722,"5.94%",45816
+"IC2","ISG expressing immune cells",1700,"3.71%",45816
+"IC2","Non-classical monocytes",1485,"3.24%",45816
+"IC2","Macrophages",1436,"3.13%",45816
+"IC2","Myeloid Dendritic cells",1197,"2.61%",45816
+"IC2","Neutrophils",1150,"2.51%",45816
+"IC2","Unknown",676,"1.48%",45816
+"IC2","Endothelial",589,"1.29%",45816
+"IC2","Pre-B cells",465,"1.01%",45816
+"IIB","CD8+ NKT-like cells",16284,"23.03%",70701
+"IIB","Non-immune cells",11952,"16.90%",70701
+"IIB","Memory CD4+ T cells",9856,"13.94%",70701
+"IIB","Naive CD4+ T cells",6175,"8.73%",70701
+"IIB","CD4+ NKT-like cells",4533,"6.41%",70701
+"IIB","Naive B cells",3913,"5.53%",70701
+"IIB","Macrophages",3736,"5.28%",70701
+"IIB","Non-classical monocytes",2841,"4.02%",70701
+"IIB","Myeloid Dendritic cells",2735,"3.87%",70701
+"IIB","ISG expressing immune cells",2597,"3.67%",70701
+"IIB","Endothelial",2185,"3.09%",70701
+"IIB","Neutrophils",1585,"2.24%",70701
+"IIB","Pre-B cells",1472,"2.08%",70701
+"IIB","Unknown",837,"1.18%",70701
+"IIIB","CD8+ NKT-like cells",16372,"26.55%",61669
+"IIIB","Non-immune cells",16136,"26.17%",61669
+"IIIB","Memory CD4+ T cells",6099,"9.89%",61669
+"IIIB","Macrophages",5414,"8.78%",61669
+"IIIB","Myeloid Dendritic cells",5264,"8.54%",61669
+"IIIB","Non-classical monocytes",4494,"7.29%",61669
+"IIIB","Naive B cells",2073,"3.36%",61669
+"IIIB","CD4+ NKT-like cells",1589,"2.58%",61669
+"IIIB","Neutrophils",1519,"2.46%",61669
+"IIIB","ISG expressing immune cells",1140,"1.85%",61669
+"IIIB","Endothelial",545,"0.88%",61669
+"IIIB","Naive CD4+ T cells",473,"0.77%",61669
+"IIIB","Pre-B cells",423,"0.69%",61669
+"IIIB","Unknown",128,"0.21%",61669
+"IIIC","Non-immune cells",8081,"44.74%",18061
+"IIIC","Naive CD4+ T cells",3605,"19.96%",18061
+"IIIC","Unknown",998,"5.53%",18061
+"IIIC","CD8+ NKT-like cells",979,"5.42%",18061
+"IIIC","Macrophages",884,"4.89%",18061
+"IIIC","Memory CD4+ T cells",750,"4.15%",18061
+"IIIC","Non-classical monocytes",684,"3.79%",18061
+"IIIC","CD4+ NKT-like cells",604,"3.34%",18061
+"IIIC","Myeloid Dendritic cells",481,"2.66%",18061
+"IIIC","ISG expressing immune cells",364,"2.02%",18061
+"IIIC","Neutrophils",293,"1.62%",18061
+"IIIC","Endothelial",223,"1.23%",18061
+"IIIC","Naive B cells",70,"0.39%",18061
+"IIIC","Pre-B cells",45,"0.25%",18061
