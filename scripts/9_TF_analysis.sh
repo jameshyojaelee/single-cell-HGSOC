@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=Seurat_DEG
-#SBATCH --output=DEG_%j.out
-#SBATCH --error=DEG_%j.err
+#SBATCH --job-name=TF_analysis
+#SBATCH --output=TF_analysis_%j.out
+#SBATCH --error=TF_analysis_%j.err
 #SBATCH --time=90:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -18,6 +18,6 @@ module load rstudio
 cd /gpfs/commons/home/jameslee/HGSOC/scripts
 
 # Run the integration script
-Rscript 4_DEG.R
+Rscript 9_TF_analysis.R 
 
-echo "Job completed" 
+echo "TF job completed" 
