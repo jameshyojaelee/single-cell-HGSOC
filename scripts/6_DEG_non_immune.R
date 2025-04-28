@@ -98,6 +98,7 @@ for (stage in comparison_stages) {
       subset_seurat,
       ident.1 = stage,
       ident.2 = "Normal",
+      assay = "RNA", # Explicitly use the RNA assay for DEG
       test.use = "wilcox", # Wilcoxon Rank Sum test
       logfc.threshold = 0.25, # Consider adjusting if needed
       min.pct = 0.1,        # Consider adjusting if needed

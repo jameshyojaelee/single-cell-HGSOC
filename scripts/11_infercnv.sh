@@ -11,11 +11,16 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=jameslee@nygenome.org
 
-# Purge all modules first
-module purge
-
-# Load modules in correct order
-module load rstudio
+# Load required modules in correct order
+module load GCCcore/12.3.0
+module load OpenBLAS/0.3.23-GCC-12.3.0
+module load GCC/12.3.0
+module load OpenMPI/4.1.5-GCC-12.3.0
+module load FFTW/3.3.10-GCC-12.3.0
+module load FlexiBLAS/3.3.1-GCC-12.3.0
+module load ScaLAPACK/2.2.0-gompi-2023a-fb
+module load foss/2023a
+module load R/4.4.1
 module load JAGS/4.3.2-foss-2023a
 
 # Go to project directory
