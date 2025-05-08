@@ -19,7 +19,7 @@ Distinct transcriptomic signatures and immune cell phenotypes within the TME of 
 | GSE160755 | Wan, et al. | • scRNA-seq of untreated organoid and parent tumor<br>• Bulk RNA-seq of HGSOC Organoids with different combinations of ICI (PD-1/PD-L1) ([Publication](https://aacrjournals.org/cancerres/article/81/1/158/649480/Enhanced-Efficacy-of-Simultaneous-PD-1-and-PD-L1)) |
 
 ## Methods
-
+ 
 ### Preprocessing and Quality Control
 - Alignment of raw fastq files using CellRanger v9.0.0 with GRCh38 human reference genome (including intronic reads)
 - Quality control using Scanpy (Python) and Seurat (R)
