@@ -1,0 +1,70 @@
+WARNING: ignoring environment value of R_HOME
+Found 4 DEG files to process.
+
+Processing: IC2_vs_Normal_wilcox.csv 
+  Found 3961 significant genes.
+  Mapped 3889 genes to Entrez IDs.
+  Running enrichGO for Ontology: BP ...
+  Simplified enrichment results for BP .
+  Saved enrichment table for BP .
+  Saved plots for BP .
+  Running enrichGO for Ontology: MF ...
+  Simplified enrichment results for MF .
+  Saved enrichment table for MF .
+  Saved plots for MF .
+  Running enrichGO for Ontology: CC ...
+  Simplified enrichment results for CC .
+  Saved enrichment table for CC .
+  Saved plots for CC .
+
+Processing: IIB_vs_Normal_wilcox.csv 
+  Found 4202 significant genes.
+  Mapped 4136 genes to Entrez IDs.
+  Running enrichGO for Ontology: BP ...
+  Simplified enrichment results for BP .
+  Saved enrichment table for BP .
+  Saved plots for BP .
+  Running enrichGO for Ontology: MF ...
+  Simplified enrichment results for MF .
+  Saved enrichment table for MF .
+  Saved plots for MF .
+  Running enrichGO for Ontology: CC ...
+  Simplified enrichment results for CC .
+  Saved enrichment table for CC .
+  Saved plots for CC .
+
+Processing: IIIB_vs_Normal_wilcox.csv 
+  Found 4707 significant genes.
+  Mapped 4622 genes to Entrez IDs.
+  Running enrichGO for Ontology: BP ...
+  Simplified enrichment results for BP .
+  Saved enrichment table for BP .
+  Saved plots for BP .
+  Running enrichGO for Ontology: MF ...
+  Simplified enrichment results for MF .
+  Saved enrichment table for MF .
+  Saved plots for MF .
+  Running enrichGO for Ontology: CC ...
+  Simplified enrichment results for CC .
+  Saved enrichment table for CC .
+  Saved plots for CC .
+
+Processing: IIIC_vs_Normal_wilcox.csv 
+  Found 5183 significant genes.
+  Mapped 5089 genes to Entrez IDs.
+  Running enrichGO for Ontology: BP ...
+  Simplified enrichment results for BP .
+  Saved enrichment table for BP .
+  Saved plots for BP .
+  Running enrichGO for Ontology: MF ...
+  Simplified enrichment results for MF .
+  Saved enrichment table for MF .
+  Saved plots for MF .
+  Running enrichGO for Ontology: CC ...
+  Simplified enrichment results for CC .
+  Saved enrichment table for CC .
+  Saved plots for CC .
+
+GO enrichment analysis complete for T cells.
+Results saved in: /gpfs/commons/home/jameslee/HGSOC/output/enrichment/GO_t_cells 
+GO_T_cells job completed

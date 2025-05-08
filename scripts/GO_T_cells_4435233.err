@@ -1,0 +1,124 @@
+
+clusterProfiler v4.14.4 Learn more at https://yulab-smu.top/contribution-knowledge-mining/
+
+Please cite:
+
+G Yu. Thirteen years of clusterProfiler. The Innovation. 2024,
+5(6):100722
+
+Attaching package: ‘clusterProfiler’
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+enrichplot v1.26.6 Learn more at https://yulab-smu.top/contribution-knowledge-mining/
+
+Please cite:
+
+T Wu, E Hu, S Xu, M Chen, P Guo, Z Dai, T Feng, L Zhou, W Tang, L Zhan,
+X Fu, S Liu, X Bo, and G Yu. clusterProfiler 4.0: A universal
+enrichment tool for interpreting omics data. The Innovation. 2021,
+2(3):100141
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:clusterProfiler’:
+
+    rename
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:clusterProfiler’:
+
+    slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:clusterProfiler’:
+
+    select
+
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:AnnotationDbi’:
+
+    select
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+Warning messages:
+1: In bitr(sig_genes, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db) :
+  1.82% of input gene IDs are fail to map...
+2: In bitr(sig_genes, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db) :
+  1.57% of input gene IDs are fail to map...
+3: In bitr(sig_genes, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db) :
+  1.81% of input gene IDs are fail to map...
+4: In bitr(sig_genes, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db) :
+  1.81% of input gene IDs are fail to map...

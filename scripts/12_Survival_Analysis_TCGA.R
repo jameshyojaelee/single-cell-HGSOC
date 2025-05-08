@@ -162,25 +162,139 @@ expression_se <- GDCprepare(query_exp)
 
 # Get count data and convert to TPM for better comparability with single-cell data
 cat("Processing expression data...\n")
-counts <- assay(expression_se, "unstranded")
-gene_lengths <- rowData(expression_se)$gene_type_length
 
-# Calculate TPM
-rpk <- counts / (gene_lengths / 1000)
-scaling_factor <- colSums(rpk) / 1e6
-tpm_matrix <- t(t(rpk) / scaling_factor)
+# Create a variable to track if we need to use backup approach
+use_backup <- FALSE
 
-# Convert to data frame
-expression_data <- as.data.frame(tpm_matrix)
-expression_data$gene_id <- rownames(expression_data)
+# Get available assays
+cat("Available assays in SummarizedExperiment:", "\n")
+avail_assays <- assays(expression_se)
+print(names(avail_assays))
+
+# Choose an appropriate assay - prefer unstranded, but fall back to others if needed
+assay_to_use <- "unstranded"
+if (!"unstranded" %in% names(avail_assays)) {
+  # Try tpm_unstrand which is already normalized
+  if ("tpm_unstrand" %in% names(avail_assays)) {
+    cat("Using pre-computed tpm_unstrand assay instead of calculating TPM manually\n")
+    expression_data <- as.data.frame(assay(expression_se, "tpm_unstrand"))
+    expression_data$gene_id <- rownames(expression_data)
+    use_backup <- TRUE
+  } else if (length(names(avail_assays)) > 0) {
+    # Use the first available assay
+    assay_to_use <- names(avail_assays)[1]
+    cat("Using", assay_to_use, "assay instead of unstranded\n")
+  }
+}
+
+if (!use_backup) {
+  # Get count data from chosen assay
+  counts <- assay(expression_se, assay_to_use)
+  cat("Using", assay_to_use, "assay for counts\n")
+  
+  # Print dimensions for debugging
+  cat("Dimensions of counts:", dim(counts)[1], "x", dim(counts)[2], "\n")
+  
+  # Check if gene_lengths are available
+  if (!("gene_type_length" %in% colnames(rowData(expression_se)))) {
+    cat("Warning: gene_type_length not found in rowData. Using raw counts instead of TPM.\n")
+    expression_data <- as.data.frame(counts)
+    expression_data$gene_id <- rownames(expression_data)
+    use_backup <- TRUE
+  }
+}
+
+if (!use_backup) {
+  gene_lengths <- rowData(expression_se)$gene_type_length
+  cat("Length of gene_lengths:", length(gene_lengths), "\n")
+  
+  # Check if gene_lengths has any NA or zero values
+  if (any(is.na(gene_lengths)) || any(gene_lengths == 0)) {
+    cat("Warning: gene_lengths contains NA or zero values. Replacing with minimum non-zero value.\n")
+    min_length <- min(gene_lengths[gene_lengths > 0], na.rm = TRUE)
+    gene_lengths[is.na(gene_lengths) | gene_lengths == 0] <- min_length
+  }
+  
+  # Calculate TPM - with error handling
+  tryCatch({
+    # Ensure counts is a matrix
+    if (!is.matrix(counts)) {
+      cat("Converting counts to matrix...\n")
+      counts <- as.matrix(counts)
+    }
+    
+    # Calculate RPK (reads per kilobase)
+    rpk <- counts / (gene_lengths / 1000)
+    
+    # Check if rpk is a matrix with correct dimensions
+    if (!is.matrix(rpk) || nrow(rpk) == 0 || ncol(rpk) == 0) {
+      stop("RPK calculation resulted in an invalid matrix")
+    }
+    
+    # Calculate scaling factor
+    cat("Calculating scaling factors...\n")
+    scaling_factor <- colSums(rpk, na.rm = TRUE) / 1e6
+    
+    # Check for zero scaling factors
+    if (any(scaling_factor == 0)) {
+      cat("Warning: Some scaling factors are zero. Replacing with minimum non-zero value.\n")
+      min_sf <- min(scaling_factor[scaling_factor > 0])
+      scaling_factor[scaling_factor == 0] <- min_sf
+    }
+    
+    # Calculate TPM
+    tpm_matrix <- t(t(rpk) / scaling_factor)
+    
+    # Convert to data frame
+    expression_data <- as.data.frame(tpm_matrix)
+    expression_data$gene_id <- rownames(expression_data)
+    
+  }, error = function(e) {
+    cat("Error in TPM calculation:", e$message, "\n")
+    cat("Attempting alternative approach using raw counts...\n")
+    
+    # Fallback to use raw counts instead of TPM
+    expression_data <<- as.data.frame(counts)
+    expression_data$gene_id <<- rownames(expression_data)
+  })
+}
+
+# Double-check that expression_data exists
+if (!exists("expression_data")) {
+  cat("Emergency fallback: creating expression_data from counts\n")
+  counts <- assay(expression_se, assay_to_use)
+  expression_data <- as.data.frame(counts)
+  expression_data$gene_id <- rownames(expression_data)
+}
 
 # Map Ensembl IDs to gene symbols
+cat("Mapping Ensembl IDs to gene symbols...\n")
 gene_info <- rowData(expression_se)
-gene_id_map <- data.frame(
-  gene_id = rownames(gene_info),
-  gene_symbol = gene_info$gene_name,
-  stringsAsFactors = FALSE
-)
+
+# Get gene names - check column names first
+gene_name_col <- NULL
+possible_cols <- c("gene_name", "external_gene_name", "Symbol", "gene_symbol")
+for (col in possible_cols) {
+  if (col %in% colnames(gene_info)) {
+    gene_name_col <- col
+    break
+  }
+}
+
+if (is.null(gene_name_col)) {
+  cat("Could not find gene name column. Using Ensembl IDs as gene symbols.\n")
+  gene_id_map <- data.frame(
+    gene_id = rownames(gene_info),
+    gene_symbol = rownames(gene_info),
+    stringsAsFactors = FALSE
+  )
+} else {
+  gene_id_map <- data.frame(
+    gene_id = rownames(gene_info),
+    gene_symbol = gene_info[[gene_name_col]],
+    stringsAsFactors = FALSE
+  )
+}
 
 # Add gene symbols to expression data
 expression_data <- merge(expression_data, gene_id_map, by = "gene_id", all.x = FALSE)
