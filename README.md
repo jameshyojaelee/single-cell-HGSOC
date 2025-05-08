@@ -16,7 +16,7 @@ Distinct transcriptomic signatures and immune cell phenotypes within the TME of 
 | GEO Accession | Study | Description |
 |---------------|-------|-------------|
 | GSE184880 | Xu, Fang, et al. | scRNA-seq of normal ovarian tissue vs. HGSOC ([Publication](https://aacrjournals.org/clincancerres/article/28/16/3590/707396/Single-Cell-RNA-Sequencing-Reveals-the-Tissue)) |
-| GSE160755 | Wan, et al. | • scRNA-seq of untreated organoid and parent tumor<br>• Bulk RNA-seq of HGSOC Organoids with different combinations of ICI (PD-1/PD-L1) ([Publication](https://aacrjournals.org/cancerres/article/81/1/158/649480/Enhanced-Efficacy-of-Simultaneous-PD-1-and-PD-L1)) |
+| GSE180661 | Vazquez-Garcia I, et al. | Multi-omic profiling of 160 tumor sites from 42 treatment-naive HGSOC patients, including scRNA-seq of CD45+/CD45- sorted cells from various anatomical sites (adnexa, omentum, peritoneum, bowel, ascites). Investigates how mutational processes and anatomical sites determine immunological states of the tumor microenvironment. |
 
 ## Methods
  

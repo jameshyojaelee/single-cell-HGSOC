@@ -188,3 +188,6 @@ Available assays in SummarizedExperiment :
   => tpm_unstrand
   => fpkm_unstrand
   => fpkm_uq_unstrand
+Error in rownames_to_column(., "sample_id") : 
+  could not find function "rownames_to_column"
+Calls: run_univariate_cox -> %>%
