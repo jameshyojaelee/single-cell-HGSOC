@@ -29,6 +29,7 @@
 **/results/
 **/output/cellranger/
 **/test/
+**/output/infercnv/
 
 # Python/R environment and cache files
 __pycache__/
