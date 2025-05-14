@@ -1,0 +1,235 @@
+Warning: program compiled against libxml 211 using older 209
+Loading required package: ggplot2
+Loading required package: ggpubr
+
+Attaching package: ‘survminer’
+
+The following object is masked from ‘package:survival’:
+
+    myeloma
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning: program compiled against libxml 211 using older 209
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+Loaded glmnet 4.1-8
+Loading required package: grid
+========================================
+ComplexHeatmap version 2.22.0
+Bioconductor page: http://bioconductor.org/packages/ComplexHeatmap/
+Github page: https://github.com/jokergoo/ComplexHeatmap
+Documentation: http://jokergoo.github.io/ComplexHeatmap-reference
+
+If you use it in published research, please cite either one:
+- Gu, Z. Complex Heatmap Visualization. iMeta 2022.
+- Gu, Z. Complex heatmaps reveal patterns and correlations in multidimensional 
+    genomic data. Bioinformatics 2016.
+
+
+The new InteractiveComplexHeatmap package can directly export static 
+complex heatmaps into an interactive Shiny app with zero effort. Have a try!
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(ComplexHeatmap))
+========================================
+
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following object is masked from ‘package:dplyr’:
+
+    count
+
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:Matrix’:
+
+    expand, unname
+
+The following object is masked from ‘package:tidyr’:
+
+    expand
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+--------------------------------------
+o GDCquery: Searching in GDC database
+--------------------------------------
+Genome of reference: hg38
+--------------------------------------------
+oo Accessing GDC. This might take a while...
+--------------------------------------------
+ooo Project: TCGA-OV
+--------------------
+oo Filtering results
+--------------------
+ooo By data.type
+ooo By workflow.type
+----------------
+oo Checking data
+----------------
+ooo Checking if there are duplicated cases
+ooo Checking if there are results for the query
+-------------------
+o Preparing output
+-------------------
+Downloading data for project TCGA-OV
+Of the 429 files for download 429 already exist.
+All samples have been already downloaded
+Starting to add information to samples
+ => Add clinical information to samples
+ => Adding TCGA molecular information from marker papers
+ => Information will have prefix 'paper_' 
+Available assays in SummarizedExperiment : 
+  => unstranded
+  => stranded_first
+  => stranded_second
+  => tpm_unstrand
+  => fpkm_unstrand
+  => fpkm_uq_unstrand
+
+ *** caught illegal operation ***
+address 0x7fb0d00673e4, cause 'illegal operand'
+
+Traceback:
+ 1: bl_make_text_box(token, drawing_context$gp, drawing_context$yoff_pt)
+ 2: FUN(X[[i]], ...)
+ 3: lapply(tokens, function(token) {    list(bl_make_text_box(token, drawing_context$gp, drawing_context$yoff_pt),         bl_make_regular_space_glue(drawing_context$gp))})
+ 4: process_text(node, drawing_context)
+ 5: dispatch_tag(node[[i]], tags[i], drawing_context)
+ 6: process_tags(node, drawing_context)
+ 7: unlist(list(process_tags(node, drawing_context), process_tag_br(NULL,     drawing_context)), recursive = FALSE)
+ 8: process_tag_p(node, drawing_context)
+ 9: dispatch_tag(node[[i]], tags[i], drawing_context)
+10: process_tags(xml2::as_list(doctree)$html$body, drawing_context)
+11: (function (text, halign, valign, use_markdown, gp) {    if (use_markdown) {        text <- markdown::markdownToHTML(text = text, options = c("use_xhtml",             "fragment_only"))    }    doctree <- read_html(paste0("<!DOCTYPE html>", text))    drawing_context <- setup_context(gp = gp, halign = halign,         word_wrap = FALSE)    boxlist <- process_tags(xml2::as_list(doctree)$html$body,         drawing_context)    vbox_inner <- bl_make_vbox(boxlist, vjust = 0, width_policy = "native")    vbox_inner})(dots[[1L]][[1L]], dots[[2L]][[1L]], dots[[3L]][[1L]], dots[[4L]][[1L]],     dots[[5L]][[1L]])
+12: mapply(make_inner_box, text, halign, valign, use_markdown, gp_list,     SIMPLIFY = FALSE)
+13: richtext_grob(label, x = x, y = y, hjust = hj, vjust = vj, halign = halign,     valign = valign, rot = angle, padding = padding, margin = mrg$margin,     r = r, align_widths = align_widths, align_heights = align_heights,     gp = gp, box_gp = box_gp, debug = element$debug)
+14: element_grob.element_markdown(list(family = "", face = "plain",     size = 50, colour = c(`expression_group=Low` = "red", `expression_group=High` = "blue"    ), fill = NULL, box.colour = NULL, linetype = NULL, linewidth = NULL,     hjust = 1, vjust = 0.5, halign = NULL, valign = NULL, angle = 0,     lineheight = 0.9, margin = c(0, 2.2, 0, 0), padding = NULL,     r = NULL, align_widths = NULL, align_heights = NULL, rotate_margins = NULL,     debug = FALSE, inherit.blank = FALSE), y = c(0.272727272727273, 0.727272727272727), margin_x = TRUE, label = c("\\-", "\\-"),     check.overlap = FALSE)
+15: (function (element, ...) {    UseMethod("element_grob")})(list(family = "", face = "plain", size = 50, colour = c(`expression_group=Low` = "red", `expression_group=High` = "blue"), fill = NULL, box.colour = NULL,     linetype = NULL, linewidth = NULL, hjust = 1, vjust = 0.5,     halign = NULL, valign = NULL, angle = 0, lineheight = 0.9,     margin = c(0, 2.2, 0, 0), padding = NULL, r = NULL, align_widths = NULL,     align_heights = NULL, rotate_margins = NULL, debug = FALSE,     inherit.blank = FALSE), y = c(0.272727272727273, 0.727272727272727), margin_x = TRUE, label = c("\\-", "\\-"), check.overlap = FALSE)
+16: exec(element_grob, label_element, `:=`(!!position_dim, break_positions),     `:=`(!!label_margin_name, TRUE), label = break_labels, check.overlap = check.overlap)
+17: draw_axis_labels(break_positions = pos[indices], break_labels = labels[indices],     label_element = elements$text, is_vertical = params$vertical,     check.overlap = params$check.overlap %||% FALSE)
+18: FUN(X[[i]], ...)
+19: lapply(dodge_indices, function(indices) {    draw_axis_labels(break_positions = pos[indices], break_labels = labels[indices],         label_element = elements$text, is_vertical = params$vertical,         check.overlap = params$check.overlap %||% FALSE)})
+20: build_labels(...)
+21: self$build_labels(key, elems, params)
+22: draw(..., self = self)
+23: pair$guide$draw(theme, params = pair$params)
+24: panel_guides_grob(panel_params$guides, position = "left", theme = theme,     labels = panel_params$draw_labels$left)
+25: render_axis_v(...)
+26: coord$render_axis_v(range, theme)
+27: draw_panels(...)
+28: self$facet$draw_panels(panels, self$layout, self$panel_scales_x,     self$panel_scales_y, self$panel_params, self$coord, data,     theme, self$facet_params)
+29: render(..., self = self)
+30: layout$render(geom_grobs, data, theme, plot$labels)
+31: ggplot_gtable.ggplot_built(ggplot_build(x))
+32: ggplot_gtable(ggplot_build(x))
+33: ggplotGrob(plots[[i]])
+34: .build_ggsurvplot(x = x, surv.plot.height = surv.plot.height,     risk.table.height = risk.table.height, ncensor.plot.height = ncensor.plot.height)
+35: print.ggsurvplot(km_plot)
+36: print(km_plot)
+37: print(km_plot)
+38: run_univariate_cox(cell_type)
+An irrecoverable exception occurred. R is aborting now ...
+/var/spool/slurmd/job4437710/slurm_script: line 47: 4033711 Illegal instruction     (core dumped) Rscript 12_Survival_Analysis_TCGA.R

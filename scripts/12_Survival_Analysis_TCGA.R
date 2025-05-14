@@ -9,6 +9,7 @@ library(dplyr)
 library(ggplot2)
 library(readr)
 library(tidyr)
+library(tibble)     # Add tibble for rownames_to_column function
 library(TCGAbiolinks)
 library(glmnet)     # For LASSO/Ridge regression
 library(stringr)
